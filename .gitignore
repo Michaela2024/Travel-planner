@@ -1,0 +1,34 @@
+
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.pyc
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Development scripts
+temp_check.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

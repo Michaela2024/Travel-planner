@@ -1,0 +1,2222 @@
+[
+  {
+    "model": "destinations.city",
+    "pk": 7,
+    "fields": {
+      "name": "Amsterdam",
+      "country": "Netherlands",
+      "region": "North Holland",
+      "hero_image_url": "https://images.unsplash.com/photo-1584003564911-a7a321c84e1c?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, food, nightlife",
+      "primary_language": "Dutch",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Seventeenth-century canal ring area of Amsterdam inscribed 2010",
+      "best_seasons": "Spring, summer, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "140.00",
+      "avg_meal_cost": "25.00",
+      "description": "Picturesque canal-laced city renowned for its artistic heritage, elaborate canal system, and cycling culture. Amsterdam's Golden Age architecture, world-class museums, and liberal atmosphere create a unique European experience. The compact city centre is best explored by bicycle, with dedicated lanes making cycling both safe and enjoyable. Charming gabled houses line tree-shaded canals, whilst cosy brown cafés and innovative restaurants serve everything from traditional Dutch fare to international cuisine. Despite rising prices and tourist crowds, Amsterdam's tolerant spirit, cultural richness, and enchanting waterways make it enduringly popular. The city balances historical preservation with progressive values.",
+      "highlights": "Rijksmuseum - Dutch Golden Age art including Rembrandt and Vermeer. Anne Frank House - Moving museum in her hiding place during WWII. Van Gogh Museum - World's largest Van Gogh collection. Canal cruises - Scenic boat tours through UNESCO waterways. Jordaan District - Charming neighbourhood with galleries and cafés. Vondelpark - Popular urban park perfect for cycling and picnics. Red Light District - Historic area with unique nightlife culture. Bloemenmarkt - Floating flower market selling tulip bulbs. Albert Cuyp Market - Bustling street market with Dutch treats. Cycling - Rent a bike and explore like a local.",
+      "created_at": "2025-12-31T11:48:55.391Z",
+      "updated_at": "2026-05-10T16:44:48.154Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 1,
+    "fields": {
+      "name": "Barcelona",
+      "country": "Spain",
+      "region": "Catalonia",
+      "hero_image_url": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, food, nightlife, beach",
+      "primary_language": "Spanish",
+      "other_languages": "Catalan, English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Works of Antoni Gaudí (Park Güell, Sagrada Familia, Casa Milà, Casa Batlló) inscribed 1984, 2005",
+      "best_seasons": "Spring, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "120.00",
+      "avg_meal_cost": "25.00",
+      "description": "Vibrant coastal city in Catalonia, renowned for its stunning architecture by Antoni Gaudí, beautiful Mediterranean beaches, and rich cultural heritage. Barcelona seamlessly blends Gothic and modernist styles, with narrow medieval streets in the Gothic Quarter contrasting with the wide boulevards of the Eixample district. The city offers world-class museums, a thriving food scene featuring traditional tapas and modern Catalan cuisine, and a lively atmosphere that attracts visitors year-round. With mild winters and warm summers, Barcelona is perfect for both cultural exploration and beach relaxation.",
+      "highlights": "Sagrada Familia - Gaudí's iconic unfinished basilica. Park Güell - Whimsical mosaic park with city views. La Ramblas - Famous tree-lined pedestrian boulevard. Gothic Quarter - Medieval streets and historic architecture. Casa Batlló and La Pedrera - Modernist Gaudí masterpieces. Barceloneta Beach - Urban beach with restaurants and nightlife. Camp Nou - FC Barcelona's legendary stadium. Picasso Museum - Extensive collection in medieval palaces. Mercat de la Boqueria - Vibrant food market off La Ramblas. Montjuïc - Hill with castle, gardens, and panoramic views.",
+      "created_at": "2025-12-31T11:37:26.074Z",
+      "updated_at": "2026-05-10T16:44:48.178Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 5,
+    "fields": {
+      "name": "Berlin",
+      "country": "Germany",
+      "region": "Brandenburg",
+      "hero_image_url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, nightlife, music, history",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "Spring, summer, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "95.00",
+      "avg_meal_cost": "18.00",
+      "description": "Vibrant, edgy capital that wears its complex history proudly whilst embracing avant-garde art, music, and culture. Berlin's landscape tells stories of division and reunification, with remnants of the Wall standing alongside sleek modern architecture. The city offers exceptional value compared to other European capitals, with affordable accommodation, diverse international cuisine, and legendary nightlife scene. Museum Island houses world-class collections, whilst alternative neighbourhoods like Kreuzberg and Friedrichshain pulse with street art, creative energy, and inclusive spirit. Berlin's green spaces, bike-friendly streets, and unpretentious atmosphere create a uniquely approachable yet culturally rich experience.",
+      "highlights": "Brandenburg Gate - Neoclassical monument and symbol of reunification. Berlin Wall Memorial - Preserved sections and documentation centre. Museum Island - UNESCO site with five world-class museums. Reichstag Building - Historic parliament with glass dome. East Side Gallery - Longest remaining Wall section with murals. Pergamon Museum - Ancient architectural reconstructions. Holocaust Memorial - Moving field of concrete stelae. Checkpoint Charlie - Former Cold War border crossing. Tiergarten - Vast central park perfect for cycling. Berghain - Legendary techno club and nightlife scene.",
+      "created_at": "2025-12-31T11:45:19.928Z",
+      "updated_at": "2026-05-10T16:44:48.202Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 15,
+    "fields": {
+      "name": "Bologna",
+      "country": "Italy",
+      "region": "Emilia-Romagna",
+      "hero_image_url": " https://images.unsplash.com/photo-1635469019177-7264fc1e013c?w=1600&fit=crop&q=80",
+      "primary_categories": "food, wine, culture, history",
+      "primary_language": "Italian",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Porticoes of Bologna inscribed 2021",
+      "best_seasons": "spring/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "95.00",
+      "avg_meal_cost": "15.00",
+      "description": "Italy's culinary capital and home to the world's oldest university. Medieval towers and porticoed walkways create an authentic Italian atmosphere without mass tourism. Food lovers' paradise with authentic ragù and fresh pasta.",
+      "highlights": "Food capital of Italy with pasta-making traditions; Medieval porticoes and towers; Europe's oldest university (1088); Vibrant student atmosphere; Authentic Italian cuisine without tourist crowds",
+      "created_at": "2026-01-11T14:16:49.427Z",
+      "updated_at": "2026-05-10T16:44:48.218Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 18,
+    "fields": {
+      "name": "Bruges",
+      "country": "Belgium",
+      "region": "West Flanders",
+      "hero_image_url": "https://images.unsplash.com/photo-1601961208755-3519c8a31ded?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture, food",
+      "primary_language": "Dutch",
+      "other_languages": "English/French",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Bruges inscribed 2000",
+      "best_seasons": "spring/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "120.00",
+      "avg_meal_cost": "20.00",
+      "description": "Fairytale medieval city with canals chocolate shops and cobblestone streets. UNESCO heritage site perfectly preserved from 13th-15th centuries. Romantic atmosphere but can be crowded in peak summer.",
+      "highlights": "UNESCO medieval city center perfectly preserved; Romantic canal tours; Belgian chocolate and beer culture; Belfry tower with panoramic views; Christmas markets among Europe's finest",
+      "created_at": "2026-01-11T14:16:49.497Z",
+      "updated_at": "2026-05-10T16:44:48.259Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 23,
+    "fields": {
+      "name": "Colmar",
+      "country": "France",
+      "region": "Alsace",
+      "hero_image_url": "https://images.unsplash.com/photo-1584999534798-5f4dc63b48db?w=1600&fit=crop&q=80",
+      "primary_categories": "culture, food, wine",
+      "primary_language": "French",
+      "other_languages": "German/English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "spring/summer/autumn/winter",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "105.00",
+      "avg_meal_cost": "18.00",
+      "description": "Fairytale Alsatian town with half-timbered houses canals and wine routes. Perfectly preserved medieval architecture colorful buildings and pedestrian streets. Gateway to Alsace wine country.",
+      "highlights": "Colorful half-timbered houses and canals; Little Venice quarter with boat tours; Route des Vins d'Alsace wine route gateway; Unterlinden Museum with Isenheim Altarpiece; Christmas capital of Alsace",
+      "created_at": "2026-01-11T14:16:49.587Z",
+      "updated_at": "2026-05-10T16:03:58.480Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 8,
+    "fields": {
+      "name": "Copenhagen",
+      "country": "Denmark",
+      "region": "Capital Region",
+      "hero_image_url": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=1600&fit=crop&q=80",
+      "primary_categories": "culture, food, nature, design",
+      "primary_language": "Danish",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "Spring, Summer",
+      "cost_level": "luxury",
+      "avg_hotel_cost_per_night": "170.00",
+      "avg_meal_cost": "40.00",
+      "description": "Sophisticated Scandinavian capital celebrated for innovative design, sustainable living, and New Nordic cuisine. Copenhagen seamlessly blends historic charm with modern architecture, from colourful Nyhavn harbour to cutting-edge waterfront developments. The city's cycling infrastructure is world-class, with bikes outnumbering cars in this remarkably liveable metropolis. Despite being one of Europe's priciest destinations, Copenhagen offers exceptional quality - from Michelin-starred restaurants to cosy hygge cafés. Progressive social values, clean streets, and emphasis on work-life balance create a relaxed yet refined atmosphere. Long summer days and stunning waterfront setting enhance its appeal.",
+      "highlights": "Nyhavn - Colourful 17th-century waterfront with restaurants. Tivoli Gardens - Historic amusement park in city centre. The Little Mermaid - Iconic bronze statue on waterfront rock. Rosenborg Castle - Renaissance castle housing Crown Jewels. Christiania - Alternative freetown community and cultural experiment. Designmuseum Danmark - Scandinavian design and decorative arts. Strøget - One of Europe's longest pedestrian shopping streets. Amalienborg Palace - Royal residence with changing of guard. Copenhagen Street Food - Diverse food halls on Paper Island. Cycling culture - Explore the city like locals on two wheels.",
+      "created_at": "2025-12-31T11:50:18.244Z",
+      "updated_at": "2026-05-10T16:44:48.275Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 11,
+    "fields": {
+      "name": "Edinburgh",
+      "country": "Scotland",
+      "region": "Lothian",
+      "hero_image_url": "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture, music, nature",
+      "primary_language": "English",
+      "other_languages": "",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Old and New Towns of Edinburgh inscribed 1995",
+      "best_seasons": "Summer, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "115.00",
+      "avg_meal_cost": "22.00",
+      "description": "Dramatic Scottish capital built across volcanic hills, combining medieval Old Town with elegant Georgian New Town. Edinburgh's literary heritage runs deep - birthplace of Harry Potter and home to countless authors. The city transforms each August into the world's largest arts festival. Edinburgh Castle dominates the skyline, whilst atmospheric closes and wynds hide centuries of history. Rich in ghost stories, whisky culture, and traditional pubs. Compact and walkable despite steep hills. UNESCO World Heritage architecture creates a fairytale atmosphere, particularly atmospheric under moody Scottish skies.",
+      "highlights": "Edinburgh Castle - Historic fortress perched on volcanic rock. Royal Mile - Medieval street connecting castle to palace. Edinburgh Festival Fringe - World's largest arts festival every August. Arthur's Seat - Extinct volcano with panoramic city views. National Museum of Scotland - Free museum covering Scottish history. Holyrood Palace - Official royal residence in Scotland. Calton Hill - Iconic hilltop monuments and city views. Dean Village - Picturesque former milling village in city centre. The Elephant House Café - Where J.K. Rowling wrote Harry Potter. Ghost tours - Evening walks through haunted underground vaults.",
+      "created_at": "2025-12-31T12:06:35.799Z",
+      "updated_at": "2026-05-10T16:44:48.315Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 9,
+    "fields": {
+      "name": "Florence",
+      "country": "Italy",
+      "region": "Tuscany",
+      "hero_image_url": " https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?w=1600&fit=crop&q=80",
+      "primary_categories": "art, history, culture, food",
+      "primary_language": "Italian",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Florence inscribed 1982",
+      "best_seasons": "Spring, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "110.00",
+      "avg_meal_cost": "22.00",
+      "description": "Cradle of the Renaissance and an open-air museum of artistic masterpieces. Florence houses the world's greatest concentration of Renaissance art, from Michelangelo's David to Botticelli's Birth of Venus. The compact historic centre, a UNESCO World Heritage site, features stunning Duomo dome, medieval bridges, and elegant piazzas. Beyond world-class museums, Florence offers Tuscan cuisine, leather craftsmanship, and wine culture. While crowded with tourists, early mornings reveal the city's authentic charm. Excellent base for exploring Tuscan countryside and hilltop towns.",
+      "highlights": "Uffizi Gallery - Unrivalled Renaissance art collection including Botticelli. Galleria dell'Accademia - Home to Michelangelo's David. Florence Cathedral (Duomo) - Iconic terracotta dome by Brunelleschi. Ponte Vecchio - Medieval stone bridge lined with jewellery shops. Boboli Gardens - Renaissance gardens behind Pitti Palace. San Lorenzo Market - Authentic food market and leather goods. Piazzale Michelangelo - Panoramic hilltop viewpoint over city. Oltrarno District - Artisan workshops and authentic trattorias. Basilica di Santa Croce - Franciscan church with famous tombs. Tuscan wine tasting - Sample Chianti in historic cellars.",
+      "created_at": "2025-12-31T12:01:07.750Z",
+      "updated_at": "2026-05-10T16:44:48.347Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 17,
+    "fields": {
+      "name": "Ghent",
+      "country": "Belgium",
+      "region": "East Flanders",
+      "hero_image_url": "https://images.unsplash.com/photo-1543408268-006eaf95c2f7?w=1600&fit=crop&q=80",
+      "primary_categories": "art, history, culture, food",
+      "primary_language": "Dutch",
+      "other_languages": "English/French",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "spring/summer/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "105.00",
+      "avg_meal_cost": "18.00",
+      "description": "Medieval gem with impressive castle and vibrant alternative arts scene. Less touristy than Bruges but equally beautiful with canals and Flemish architecture. Strong student culture creates lively atmosphere.",
+      "highlights": "Gravensteen medieval castle; World-class medieval art museums; Vibrant alternative culture and street art; Beautiful canals without Bruges crowds; Vegetarian-friendly city (Veggie Day birthplace)",
+      "created_at": "2026-01-11T14:16:49.472Z",
+      "updated_at": "2026-05-10T16:44:48.363Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 22,
+    "fields": {
+      "name": "Heidelberg",
+      "country": "Germany",
+      "region": "Baden-Württemberg",
+      "hero_image_url": " https://images.unsplash.com/photo-1707666540463-ef954afdb663?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture, nature",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "spring/summer/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "100.00",
+      "avg_meal_cost": "16.00",
+      "description": "Romantic university town with impressive castle ruins overlooking Neckar River. Birthplace of German Romanticism philosophy capital and picturesque Old Town. One of few German cities undamaged in WWII.",
+      "highlights": "Germany's oldest university (1386); Heidelberg Castle ruins romantically overlooking city; Philosopher's Walk with river views; Perfectly preserved baroque Old Town; Birthplace of German Romantic movement",
+      "created_at": "2026-01-11T14:16:49.563Z",
+      "updated_at": "2026-05-10T16:44:48.387Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 20,
+    "fields": {
+      "name": "Innsbruck",
+      "country": "Austria",
+      "region": "Tyrol",
+      "hero_image_url": "https://images.unsplash.com/photo-1707133105893-1216d1cc4c53?w=1600&fit=crop&q=80",
+      "primary_categories": "nature, adventure, culture",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "winter/spring/summer",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "110.00",
+      "avg_meal_cost": "17.00",
+      "description": "Alpine capital offering year-round mountain activities. Five ski areas accessible by public transport winter sports hub summer hiking paradise. Historic Old Town beneath dramatic peaks.",
+      "highlights": "Five Olympic ski areas within city reach; Year-round mountain cable cars; Golden Roof and historic Old Town; Summer hiking and winter sports; Gateway to Austrian Alps",
+      "created_at": "2026-01-11T14:16:49.528Z",
+      "updated_at": "2026-05-10T16:44:48.411Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 13,
+    "fields": {
+      "name": "Krakow",
+      "country": "Poland",
+      "region": "Southern Poland",
+      "hero_image_url": "https://images.unsplash.com/photo-1650452495887-2cd2473171a4?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture, food",
+      "primary_language": "Polish",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Kraków (inscribed 1978) - Medieval Old Town and Wawel Castle. Wieliczka and Bochnia Royal Salt Mines (inscribed 1978) - Underground chambers and chapels carved from salt.",
+      "best_seasons": "Spring, summer, autumn",
+      "cost_level": "budget",
+      "avg_hotel_cost_per_night": "55.00",
+      "avg_meal_cost": "10.00",
+      "description": "Enchanting former royal capital preserving medieval splendor and Jewish heritage in remarkably intact historic quarter. Krakow's UNESCO-listed Old Town features Europe's largest medieval market square, Gothic churches, and Renaissance architecture untouched by WWII destruction. The city offers exceptional value with affordable accommodation, hearty Polish cuisine, and rich cultural life. Somber yet essential Auschwitz memorial lies nearby. Kazimierz district showcases revitalized Jewish quarter with synagogues, klezmer music, and trendy cafés. Salt mines, Wawel Castle, and vibrant student atmosphere create diverse appeal beyond its tragic history.",
+      "highlights": "Main Market Square - Largest medieval town square in Europe. Wawel Castle - Royal residence with cathedral and dragon's den. St. Mary's Basilica - Gothic church with famous wooden altarpiece. Kazimierz District - Historic Jewish quarter with synagogues and cafés. Auschwitz-Birkenau - Essential memorial and museum 70km away. Wieliczka Salt Mine - UNESCO underground cathedral and chambers. Cloth Hall - Renaissance trading hall now housing market stalls. Planty Park - Green ring of parks encircling Old Town. Oskar Schindler's Factory - Museum of WWII occupation. Polish cuisine - Hearty pierogi, żurek soup in affordable restaurants.",
+      "created_at": "2025-12-31T15:35:21.818Z",
+      "updated_at": "2026-05-10T16:44:48.427Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 6,
+    "fields": {
+      "name": "Lisbon",
+      "country": "Portugal",
+      "region": "Lisbon Region",
+      "hero_image_url": "https://images.unsplash.com/photo-1501927023255-9063be98970c?w=1600&fit=crop&q=80",
+      "primary_categories": "culture, food, music, nightlife",
+      "primary_language": "Portuguese",
+      "other_languages": "English,Spanish",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Monastery of the Hieronymites and Tower of Belém inscribed 1983",
+      "best_seasons": "Spring, Summer, autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "85.00",
+      "avg_meal_cost": "15.00",
+      "description": "Enchanting coastal capital built across seven hills, offering stunning viewpoints, historic trams, and laid-back Mediterranean charm at excellent value. Lisbon's pastel-coloured buildings, azulejo-tiled façades, and atmospheric Fado music create a romantic, nostalgic atmosphere. The city blends Moorish influences with Age of Discovery grandeur, whilst modern districts showcase contemporary Portuguese culture. Exceptional seafood, custard tarts from century-old bakeries, and affordable wine make Lisbon a foodie paradise. Mild climate year-round and proximity to beautiful beaches add to its appeal. Recent gentrification has brought creative energy whilst maintaining authentic neighbourhood character.",
+      "highlights": "Belém Tower - Manueline fortification from Age of Discovery. Jerónimos Monastery - Stunning monastery and Vasco da Gama tomb. Alfama District - Historic quarter with Fado houses and narrow streets. São Jorge Castle - Moorish castle with panoramic city views. Tram 28 - Iconic vintage tram through historic neighbourhoods. LX Factory - Creative hub in former industrial complex. Sintra day trip - Fairy-tale palaces and lush gardens. Pastéis de Belém - Original custard tart bakery since 1837. Miradouros - Scenic viewpoints across terracotta rooftops. Cais do Sodré - Revitalised riverside district with nightlife.",
+      "created_at": "2025-12-31T11:47:38.179Z",
+      "updated_at": "2026-05-10T16:44:48.451Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 21,
+    "fields": {
+      "name": "Ljubljana",
+      "country": "Slovenia",
+      "region": "Central Slovenia",
+      "hero_image_url": "https://images.unsplash.com/photo-1611576191056-3e6696029388?w=1600&fit=crop&q=80",
+      "primary_categories": "nature, culture, food",
+      "primary_language": "Slovenian",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "spring/summer/autumn",
+      "cost_level": "budget",
+      "avg_hotel_cost_per_night": "75.00",
+      "avg_meal_cost": "12.00",
+      "description": "Europe's greenest capital with car-free center and vibrant café culture. Charming small-scale city with castle riverside markets and alternative scene. Best value for quality of life in Europe.",
+      "highlights": "European Green Capital award winner; Beautiful castle overlooking city; Car-free pedestrian center; Dragon Bridge and Art Nouveau architecture; Affordable prices with high quality",
+      "created_at": "2026-01-11T14:16:49.545Z",
+      "updated_at": "2026-05-10T16:44:48.467Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 4,
+    "fields": {
+      "name": "London",
+      "country": "United Kingdom",
+      "region": "England",
+      "hero_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, history, food, nightlife, music",
+      "primary_language": "English",
+      "other_languages": "",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Tower of London inscribed 1988, Westminster Palace inscribed 1987",
+      "best_seasons": "Spring, summer",
+      "cost_level": "luxury",
+      "avg_hotel_cost_per_night": "160.00",
+      "avg_meal_cost": "30.00",
+      "description": "Dynamic global metropolis blending centuries of history with cutting-edge modernity, from medieval Tower of London to soaring glass skyscrapers. London's world-class museums offer free admission, whilst its diverse neighbourhoods each possess distinct character - from elegant Kensington to trendy Shoreditch. The city's theatrical tradition, royal heritage, and multicultural dining scene create endless exploration opportunities. Despite notoriously unpredictable weather and premium prices, London's unparalleled cultural offerings, historic landmarks, and vibrant energy make it an essential European destination. Excellent public transport connects attractions across this sprawling riverside city.",
+      "highlights": "British Museum - Vast collection including Rosetta Stone, free entry. Tower of London - Historic fortress housing Crown Jewels. Buckingham Palace - Royal residence with Changing of the Guard. Westminster Abbey - Gothic church where monarchs are crowned. Houses of Parliament and Big Ben - Iconic riverside landmarks. National Gallery - World-class art collection, free admission. Tate Modern - Contemporary art in former power station. Covent Garden - Entertainment district with street performers. Borough Market - Historic food market with global cuisine. West End theatres - World-renowned musical and theatre productions.",
+      "created_at": "2025-12-31T11:44:07.816Z",
+      "updated_at": "2026-05-10T16:44:48.491Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 3,
+    "fields": {
+      "name": "Paris",
+      "country": "France",
+      "region": "Ile-de-France",
+      "hero_image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, food, wine, history, nightlife",
+      "primary_language": "French",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Banks of the Seine in Paris inscribed 1991",
+      "best_seasons": "Spring, autumn",
+      "cost_level": "luxury",
+      "avg_hotel_cost_per_night": "180.00",
+      "avg_meal_cost": "35.00",
+      "description": "The City of Light captivates visitors with its timeless elegance, world-renowned museums, and iconic monuments. Paris epitomises European sophistication, from the grandeur of Haussmann's boulevards to intimate neighbourhood bistros serving exquisite French cuisine. The city's artistic heritage spans from the Louvre's masterpieces to Montmartre's bohemian charm. Romantic Seine-side walks, elegant gardens, and fashionable boutiques create an atmosphere of effortless chic. While Paris can be expensive, its cultural wealth, architectural beauty, and gastronomic excellence make it an unforgettable destination that rewards every type of traveller who seeks beauty and refinement.",
+      "highlights": "Eiffel Tower - Iconic iron lattice tower and Paris symbol. Louvre Museum - World's largest art museum with Mona Lisa. Notre-Dame Cathedral - Gothic masterpiece on Île de la Cité. Sacré-Cœur - Stunning white basilica atop Montmartre. Arc de Triomphe - Monumental arch on the Champs-Élysées. Musée d'Orsay - Impressionist art in former railway station. Versailles Palace - Opulent royal château and gardens. Latin Quarter - Historic student district with bookshops. Marais District - Trendy neighbourhood with galleries and cafés. Seine River cruises - Romantic boat tours past landmarks.",
+      "created_at": "2025-12-31T11:40:45.563Z",
+      "updated_at": "2026-05-10T16:44:48.523Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 12,
+    "fields": {
+      "name": "Porto",
+      "country": "Portugal",
+      "region": "Northern Portugal",
+      "hero_image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1600&fit=crop&q=80",
+      "primary_categories": "culture, food, wine, history",
+      "primary_language": "Portuguese",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "istoric Centre of Porto inscribed 1996",
+      "best_seasons": "Spring, summer, autumn",
+      "cost_level": "budget",
+      "avg_hotel_cost_per_night": "70.00",
+      "avg_meal_cost": "14.00",
+      "description": "Charming riverside city built on steep hills overlooking the Douro River, famous for port wine production and authentic Portuguese character. Porto's UNESCO-listed Ribeira district features colorful tiled buildings cascading down to the waterfront, connected by the iconic Dom Luís I Bridge. Less polished than Lisbon, Porto offers genuine local atmosphere with traditional tascas, azulejo-covered churches, and Belle Époque cafés. Excellent value destination with affordable accommodation and dining. Port wine cellars in Vila Nova de Gaia offer tastings with river views. Compact historic centre is walkable despite hills, with vintage trams adding nostalgic charm.",
+      "highlights": "Livraria Lello - Stunning Art Nouveau bookshop, inspired Harry Potter. Dom Luís I Bridge - Iconic double-deck metal bridge with views. Ribeira District - UNESCO waterfront with colorful houses and cafés. Port wine cellars - Vila Nova de Gaia wine lodge tastings. Clérigos Tower - Baroque bell tower with panoramic city views. São Bento Station - Railway station with magnificent azulejo tiles. Serralves Museum - Contemporary art museum in Art Deco villa. Bolhão Market - Traditional food market (currently renovated). Foz do Douro - Beachfront district where river meets Atlantic. Vintage tram lines - Historic streetcars through scenic routes.",
+      "created_at": "2025-12-31T12:09:46.852Z",
+      "updated_at": "2026-05-10T16:44:48.539Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 2,
+    "fields": {
+      "name": "Prague",
+      "country": "Czech Republic",
+      "region": "Bohemia",
+      "hero_image_url": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture, art, nightlife",
+      "primary_language": "Czech",
+      "other_languages": "English, German",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Prague inscribed 1992",
+      "best_seasons": "Spring, autumn",
+      "cost_level": "budget",
+      "avg_hotel_cost_per_night": "65.00",
+      "avg_meal_cost": "12.00",
+      "description": "Enchanting Central European capital known as the \"City of a Hundred Spires,\" featuring stunning medieval architecture, a fairy-tale castle complex, and charming cobblestone streets. Prague's well-preserved Old Town, dramatic Gothic churches, and baroque buildings create a romantic atmosphere that transports visitors back in time. The city offers exceptional value for travellers, with affordable accommodation, dining, and world-class beer culture. The Vltava River winds through the city, spanned by the iconic Charles Bridge adorned with statues. Prague's compact centre makes it perfect for walking, with countless hidden courtyards, beer halls, and cultural treasures waiting to be discovered.",
+      "highlights": "Prague Castle - Largest ancient castle complex in the world. Charles Bridge - Historic 14th-century bridge with baroque statues. Old Town Square - Medieval square with Astronomical Clock. Jewish Quarter - Historic synagogues and cemetery. Petřín Lookout Tower - Miniature Eiffel Tower with city views. Wenceslas Square - Modern boulevard and historic gathering place. Vyšehrad - Historic fort with stunning river views. St. Vitus Cathedral - Gothic masterpiece within castle grounds. Lennon Wall - Colourful graffiti tribute to John Lennon. Czech beer halls - Traditional pubs serving world-famous beer.",
+      "created_at": "2025-12-31T11:39:08.935Z",
+      "updated_at": "2026-05-10T16:44:48.571Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 14,
+    "fields": {
+      "name": "Regensburg",
+      "country": "Germany",
+      "region": "Bavaria",
+      "hero_image_url": "https://images.unsplash.com/photo-1712743410912-aedcde879331?w=1600&fit=crop&q=80",
+      "primary_categories": "history, culture",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Old Town of Regensburg with Stadtamhof (inscribed 2006) - Exceptional example of medieval trading centre with well-preserved buildings spanning two millennia.",
+      "best_seasons": "Spring, Summer, autumn",
+      "cost_level": "budget",
+      "avg_hotel_cost_per_night": "75.00",
+      "avg_meal_cost": "15.00",
+      "description": "Remarkably preserved medieval city on the Danube, showcasing authentic Bavarian charm without tourist crowds. Regensburg's 2,000-year history spans Roman fortifications, medieval merchant houses, and Gothic cathedral spires. The UNESCO-listed Old Town features narrow cobblestone lanes, the iconic Stone Bridge, and Germany's oldest sausage kitchen. Unlike larger German cities, Regensburg escaped WWII bombing, preserving its architectural integrity. Student population from the university adds youthful energy to traditional beer gardens and riverside cafés. Excellent value destination offering genuine Bavarian culture, medieval atmosphere, and Danube River beauty often overlooked by international travelers.",
+      "highlights": "Regensburg Cathedral (Dom St. Peter) - Gothic masterpiece with stunning stained glass. Stone Bridge - 12th-century bridge, medieval engineering marvel. Old Town - Largest preserved medieval city centre in Germany. Historische Wurstkuchl - World's oldest continuously operating sausage kitchen since 1135. Thurn und Taxis Palace - Princely residence with museum and Christmas market. Danube River promenade - Scenic riverside walks and beer gardens. Stadtamhof - Charming district across the Stone Bridge. Document Neupfarrplatz - Underground archaeological site revealing Roman and Jewish history. St. Emmeram's Basilica - Romanesque church with ornate baroque interior. Traditional beer gardens - Authentic Bavarian atmosphere along the Danube.",
+      "created_at": "2025-12-31T15:50:59.751Z",
+      "updated_at": "2026-05-10T16:44:48.595Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 19,
+    "fields": {
+      "name": "Salzburg",
+      "country": "Austria",
+      "region": "Salzburg State",
+      "hero_image_url": "https://images.unsplash.com/photo-1661715447831-f013c7fb3b52?w=1600&fit=crop&q=80",
+      "primary_categories": "music, history, culture, nature",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Salzburg inscribed 1996",
+      "best_seasons": "spring/summer/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "115.00",
+      "avg_meal_cost": "18.00",
+      "description": "Mozart's birthplace surrounded by Alpine scenery. Classical music festivals world-renowned Christmas markets and Sound of Music heritage. Baroque architecture meets mountain backdrop.",
+      "highlights": "Mozart's birthplace and legacy; Salzburg Festival (classical music); Hohensalzburg Fortress with Alpine views; Sound of Music filming locations; Christmas markets in baroque setting",
+      "created_at": "2026-01-11T14:16:49.513Z",
+      "updated_at": "2026-05-10T16:44:48.604Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 16,
+    "fields": {
+      "name": "San Sebastián",
+      "country": "Spain",
+      "region": "Basque Country",
+      "hero_image_url": "https://images.unsplash.com/photo-1594305548608-df04461f1b28?w=1600&fit=crop&q=80",
+      "primary_categories": "food, wine, culture, beach",
+      "primary_language": "Spanish/Basque",
+      "other_languages": "English",
+      "is_unesco_heritage": false,
+      "unesco_sites": "",
+      "best_seasons": "spring/summer/autumn",
+      "cost_level": "luxury",
+      "avg_hotel_cost_per_night": "160.00",
+      "avg_meal_cost": "25.00",
+      "description": "Elegant coastal city famous for pintxos bars and Michelin-starred restaurants. Belle Époque architecture meets modern culinary innovation in one of Europe's most beautiful beach cities. Three beaches and dramatic coastline.",
+      "highlights": "World-class pintxos bar scene; Multiple Michelin-starred restaurants; La Concha beach consistently rated Europe's best; Basque culture and cuisine; Film festival in September",
+      "created_at": "2026-01-11T14:16:49.443Z",
+      "updated_at": "2026-05-10T16:44:48.620Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 24,
+    "fields": {
+      "name": "Siena",
+      "country": "Italy",
+      "region": "Tuscany",
+      "hero_image_url": "https://images.unsplash.com/photo-1604142056225-1feabdac3af1?w=1600&fit=crop&q=80",
+      "primary_categories": "art, history, culture",
+      "primary_language": "Italian",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Siena inscribed 1995",
+      "best_seasons": "spring/autumn",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "100.00",
+      "avg_meal_cost": "15.00",
+      "description": "Medieval Tuscan gem famous for Il Palio horse race and Gothic architecture. Less crowded than Florence with authentic Tuscan atmosphere. Shell-shaped Piazza del Campo one of Europe's finest squares.",
+      "highlights": "Il Palio historic horse race twice yearly; Shell-shaped Piazza del Campo; Gothic cathedral with stunning artwork; Rolling Tuscan countryside; Medieval atmosphere without Florence crowds",
+      "created_at": "2026-01-11T14:16:49.610Z",
+      "updated_at": "2026-05-10T16:44:48.636Z"
+    }
+  },
+  {
+    "model": "destinations.city",
+    "pk": 10,
+    "fields": {
+      "name": "Vienna",
+      "country": "Austria",
+      "region": "Vienna State",
+      "hero_image_url": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1600&fit=crop&q=80",
+      "primary_categories": "art, culture, music, food, history, nightlife",
+      "primary_language": "German",
+      "other_languages": "English",
+      "is_unesco_heritage": true,
+      "unesco_sites": "Historic Centre of Vienna inscribed 2001, Schönbrunn Palace inscribed 1996",
+      "best_seasons": "Spring, autumn, winter",
+      "cost_level": "moderate",
+      "avg_hotel_cost_per_night": "120.00",
+      "avg_meal_cost": "25.00",
+      "description": "Imperial capital renowned for classical music heritage, grand palaces, and sophisticated coffeehouse culture. Vienna's elegant boulevards, opera houses, and concert halls echo with Mozart, Beethoven, and Strauss. The city balances imperial grandeur with modern livability, offering world-class museums, beautiful parks, and legendary café tradition. Christmas markets transform the city into a winter wonderland. Viennese coffeehouse culture is UNESCO-protected, where locals linger over Sachertorte and newspapers. Despite refined atmosphere, Vienna remains approachable with efficient public transport and mixed price ranges.",
+      "highlights": "Schönbrunn Palace - Baroque imperial summer residence with gardens. Vienna State Opera - World-renowned opera house with performances. Hofburg Palace - Former Habsburg residence, now museums. St. Stephen's Cathedral - Gothic masterpiece in city centre. Belvedere Palace - Baroque palace housing Klimt's \"The Kiss\". MuseumsQuartier - Contemporary art and cultural complex. Naschmarkt - Vibrant food market with international cuisine. Vienna Coffeehouse Culture - Historic cafés like Café Central. Christmas Markets - Traditional markets across the city in winter. Spanish Riding School - Classical dressage performances with Lipizzaner horses.",
+      "created_at": "2025-12-31T12:02:09.527Z",
+      "updated_at": "2026-05-10T16:39:39.328Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 18,
+    "fields": {
+      "city": 14,
+      "name": "Cathedral (Dom St. Peter)",
+      "category": "architecture",
+      "description": "Gothic masterpiece with stunning stained glass windows and twin spires dominating the skyline. Home to famous Regensburger Domspatzen boys' choir. Finest Gothic architecture in Bavaria.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T13:18:08.018Z",
+      "updated_at": "2026-01-01T13:18:08.018Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 10,
+    "fields": {
+      "city": 2,
+      "name": "Charles Bridge",
+      "category": "architecture",
+      "description": "Historic 14th-century stone bridge lined with 30 baroque statues of saints. Iconic Prague landmark with street artists and stunning river views connecting Old Town to Castle district.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T10:40:56.023Z",
+      "updated_at": "2026-01-01T10:43:39.601Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 7,
+    "fields": {
+      "city": 9,
+      "name": "Duomo and Brunelleschi's Dome",
+      "category": "architecture",
+      "description": "Iconic Renaissance dome by Brunelleschi with panoramic city views. Gothic cathedral with stunning frescoes.",
+      "is_free": false,
+      "entry_fee": "18.00",
+      "importance": 1,
+      "created_at": "2026-01-01T10:37:33.079Z",
+      "updated_at": "2026-01-01T10:37:33.079Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 6,
+    "fields": {
+      "city": 9,
+      "name": "Galleria dell'Accademia",
+      "category": "museum_art",
+      "description": "Home to Michelangelo's David and other Renaissance sculptures and paintings.",
+      "is_free": false,
+      "entry_fee": "16.00",
+      "importance": 1,
+      "created_at": "2026-01-01T10:36:31.185Z",
+      "updated_at": "2026-01-01T10:36:31.185Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 15,
+    "fields": {
+      "city": 13,
+      "name": "Kazimierz Jewish Quarter",
+      "category": "museum_history",
+      "description": "Historic Jewish district with preserved synagogues, Schindler's Factory museum, and poignant reminders of WWII. Featured in Schindler's List. Now revitalized with klezmer music cafés and art galleries.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T13:07:29.057Z",
+      "updated_at": "2026-01-01T13:07:29.057Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 13,
+    "fields": {
+      "city": 13,
+      "name": "Market Square",
+      "category": "architecture",
+      "description": "Largest medieval town square in Europe. UNESCO World Heritage site featuring Gothic Cloth Hall, St. Mary's Basilica with famous wooden altarpiece, and vibrant café culture. Heart of Krakow's Old Town.\r\nIs free: Yes",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T13:05:58.655Z",
+      "updated_at": "2026-01-01T13:05:58.655Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 19,
+    "fields": {
+      "city": 14,
+      "name": "Old Town",
+      "category": "architecture",
+      "description": "Germany's best-preserved medieval city centre. UNESCO World Heritage site with 2,000 years of architecture from Roman walls to Gothic towers. Narrow cobblestone lanes reveal authentic medieval atmosphere untouched by WWII bombing.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T13:18:51.668Z",
+      "updated_at": "2026-01-01T13:18:51.668Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 11,
+    "fields": {
+      "city": 2,
+      "name": "Old Town Square",
+      "category": "architecture",
+      "description": "Medieval square with colorful baroque buildings, Gothic churches, and famous astronomical clock with hourly show.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T10:45:05.108Z",
+      "updated_at": "2026-01-01T10:45:05.108Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 9,
+    "fields": {
+      "city": 2,
+      "name": "Prague Castle",
+      "category": "architecture",
+      "description": "Largest ancient castle complex in the world with Gothic St. Vitus Cathedral, royal palace, and stunning city views.",
+      "is_free": false,
+      "entry_fee": "12.00",
+      "importance": 1,
+      "created_at": "2026-01-01T10:39:56.094Z",
+      "updated_at": "2026-01-01T10:39:56.094Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 1,
+    "fields": {
+      "city": 1,
+      "name": "Sagrada Familia",
+      "category": "architecture",
+      "description": "Antoni Gaudí's unfinished masterpiece and Barcelona's most iconic landmark. This extraordinary basilica has been under construction since 1882, blending Gothic and Art Nouveau forms with Gaudí's unique organic style. Soaring towers, intricate façades depicting biblical scenes, and a stunning interior with tree-like columns and kaleidoscopic stained glass create an otherworldly experience. Expected completion around 2026.",
+      "is_free": false,
+      "entry_fee": "26.00",
+      "importance": 1,
+      "created_at": "2025-12-31T11:51:25.734Z",
+      "updated_at": "2025-12-31T11:51:25.734Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 17,
+    "fields": {
+      "city": 14,
+      "name": "Stone Bridge",
+      "category": "architecture",
+      "description": "12th-century medieval bridge, engineering marvel that served as model for Charles Bridge in Prague. Stunning views of Old Town's medieval skyline. UNESCO World Heritage landmark.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 1,
+      "created_at": "2026-01-01T13:17:27.135Z",
+      "updated_at": "2026-01-01T13:17:27.135Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 5,
+    "fields": {
+      "city": 9,
+      "name": "Uffizi Gallery",
+      "category": "museum_art",
+      "description": "World's finest collection of Renaissance art including Botticelli's Birth of Venus and works by Leonardo da Vinci.",
+      "is_free": false,
+      "entry_fee": "20.00",
+      "importance": 1,
+      "created_at": "2026-01-01T10:35:21.261Z",
+      "updated_at": "2026-01-01T10:35:21.261Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 14,
+    "fields": {
+      "city": 13,
+      "name": "Wawel Castle",
+      "category": "architecture",
+      "description": "Historic royal residence and cathedral on limestone hill overlooking Vistula River. Centuries of Polish royal history, Renaissance courtyards, and crown jewels. UNESCO World Heritage site.",
+      "is_free": false,
+      "entry_fee": "8.00",
+      "importance": 1,
+      "created_at": "2026-01-01T13:06:40.706Z",
+      "updated_at": "2026-01-01T13:06:40.706Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 3,
+    "fields": {
+      "city": 1,
+      "name": "Barceloneta Beach",
+      "category": "beach",
+      "description": "Popular urban beach with golden sand, beachfront chiringuitos (beach bars), and swimming. Lively atmosphere with locals and tourists enjoying Mediterranean sun.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 2,
+      "created_at": "2025-12-31T12:12:26.514Z",
+      "updated_at": "2025-12-31T12:12:26.514Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 20,
+    "fields": {
+      "city": 14,
+      "name": "Document Neupfarrplatz",
+      "category": "museum_history",
+      "description": "Underground archaeological site revealing Roman, medieval, and Jewish history beneath the square. Multimedia exhibition showing 2,000 years of Regensburg's layered past. Fascinating journey through time.",
+      "is_free": false,
+      "entry_fee": "6.00",
+      "importance": 2,
+      "created_at": "2026-01-01T13:19:55.226Z",
+      "updated_at": "2026-01-01T13:19:55.226Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 12,
+    "fields": {
+      "city": 2,
+      "name": "Jewish Quarter (Kafka's Prague)",
+      "category": "museum_history",
+      "description": "Historic Josefov district where Franz Kafka grew up. Preserved synagogues, layered ancient cemetery containing Rabbi Loew (Golem legend creator), and museums documenting centuries of Jewish culture. Essential literary pilgrimage site.",
+      "is_free": false,
+      "entry_fee": "14.00",
+      "importance": 2,
+      "created_at": "2026-01-01T10:45:55.087Z",
+      "updated_at": "2026-01-01T10:48:21.526Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 4,
+    "fields": {
+      "city": 1,
+      "name": "Mercat de la Boqueria",
+      "category": "food",
+      "description": "Vibrant covered market off La Rambla featuring fresh produce, seafood, jamón, and food stalls. Essential foodie experience, best visited in morning before crowds.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 2,
+      "created_at": "2025-12-31T12:13:02.373Z",
+      "updated_at": "2025-12-31T12:13:02.373Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 8,
+    "fields": {
+      "city": 9,
+      "name": "Ponte Vecchio",
+      "category": "architecture",
+      "description": "Medieval stone bridge lined with jewellery shops. Iconic Florence landmark and romantic photo spot.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 2,
+      "created_at": "2026-01-01T10:38:11.217Z",
+      "updated_at": "2026-01-01T10:38:11.217Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 16,
+    "fields": {
+      "city": 13,
+      "name": "Wieliczka Salt Mine",
+      "category": "museum_history",
+      "description": "UNESCO World Heritage underground labyrinth with chapels, chambers, and sculptures carved entirely from salt. Operating since 13th century. Unique subterranean experience 15km from city center.",
+      "is_free": false,
+      "entry_fee": "25.00",
+      "importance": 2,
+      "created_at": "2026-01-01T13:08:12.839Z",
+      "updated_at": "2026-01-01T13:08:12.847Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 80,
+    "fields": {
+      "city": 20,
+      "name": "Bergisel Ski Jump",
+      "category": "viewpoint",
+      "description": "Olympic ski jump with viewing platform designed by Zaha Hadid offering mountain views.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 3,
+      "created_at": "2026-05-03T19:02:08.710Z",
+      "updated_at": "2026-05-03T19:02:08.710Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 2,
+    "fields": {
+      "city": 1,
+      "name": "MACBA",
+      "category": "museum_art",
+      "description": "Leading contemporary art museum in white modernist building. Free terrace popular with local skaters. Focuses on post-1945 Catalan and international art.",
+      "is_free": false,
+      "entry_fee": "12.00",
+      "importance": 3,
+      "created_at": "2025-12-31T12:11:52.307Z",
+      "updated_at": "2025-12-31T12:11:52.307Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 68,
+    "fields": {
+      "city": 16,
+      "name": "Monte Igueldo",
+      "category": "viewpoint",
+      "description": "Mountain viewpoint accessible by funicular offering panoramic bay and coastline views.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 3,
+      "created_at": "2026-05-03T19:02:07.809Z",
+      "updated_at": "2026-05-03T19:02:07.809Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 53,
+    "fields": {
+      "city": 8,
+      "name": "The Little Mermaid",
+      "category": "viewpoint",
+      "description": "Iconic bronze statue inspired by Hans Christian Andersen's fairy tale on harbor waterfront.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 3,
+      "created_at": "2026-05-03T19:02:07.405Z",
+      "updated_at": "2026-05-03T19:02:07.405Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 44,
+    "fields": {
+      "city": 6,
+      "name": "Time Out Market",
+      "category": "food",
+      "description": "Gourmet food hall featuring top Lisbon chefs and restaurants under one roof.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 3,
+      "created_at": "2026-05-03T19:02:07.145Z",
+      "updated_at": "2026-05-03T19:02:07.145Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 43,
+    "fields": {
+      "city": 6,
+      "name": "Alfama District",
+      "category": "cultural",
+      "description": "Lisbon's oldest neighborhood with narrow streets colorful tiles fado music and castle views.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.112Z",
+      "updated_at": "2026-05-03T19:02:07.112Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 56,
+    "fields": {
+      "city": 11,
+      "name": "Arthur's Seat",
+      "category": "nature",
+      "description": "Extinct volcano offering panoramic city views after a scenic hike in Holyrood Park.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.519Z",
+      "updated_at": "2026-05-03T19:02:07.519Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 50,
+    "fields": {
+      "city": 10,
+      "name": "Belvedere Palace",
+      "category": "museum_art",
+      "description": "Baroque palace complex housing Austrian art including Klimt's famous Kiss painting.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.304Z",
+      "updated_at": "2026-05-03T19:02:07.304Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 38,
+    "fields": {
+      "city": 4,
+      "name": "Borough Market",
+      "category": "food",
+      "description": "Historic food market offering international street food artisan products and gourmet delights.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.988Z",
+      "updated_at": "2026-05-03T19:02:06.988Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 73,
+    "fields": {
+      "city": 18,
+      "name": "Canal Boat Tour",
+      "category": "viewpoint",
+      "description": "Scenic cruise through medieval canals offering unique perspective of historic buildings.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.942Z",
+      "updated_at": "2026-05-03T19:02:07.942Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 41,
+    "fields": {
+      "city": 7,
+      "name": "Canal Ring",
+      "category": "viewpoint",
+      "description": "UNESCO heritage 17th-century canal network perfect for boat tours and waterside strolls.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.048Z",
+      "updated_at": "2026-05-03T19:02:07.048Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 83,
+    "fields": {
+      "city": 21,
+      "name": "Central Market",
+      "category": "food",
+      "description": "Vibrant riverside market designed by Plečnik with fresh produce local foods and atmosphere.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:09.058Z",
+      "updated_at": "2026-05-03T19:02:09.058Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 74,
+    "fields": {
+      "city": 18,
+      "name": "Church of Our Lady",
+      "category": "museum_art",
+      "description": "Gothic church housing Michelangelo's Madonna and Child sculpture.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:08.075Z",
+      "updated_at": "2026-05-03T19:02:08.075Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 82,
+    "fields": {
+      "city": 21,
+      "name": "Dragon Bridge",
+      "category": "architecture",
+      "description": "Art Nouveau bridge with distinctive dragon statues symbolizing the city.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:08.961Z",
+      "updated_at": "2026-05-03T19:02:08.961Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 47,
+    "fields": {
+      "city": 5,
+      "name": "East Side Gallery",
+      "category": "cultural",
+      "description": "Longest remaining section of Berlin Wall transformed into open-air gallery with political murals.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.231Z",
+      "updated_at": "2026-05-03T19:02:07.231Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 35,
+    "fields": {
+      "city": 13,
+      "name": "Kazimierz District",
+      "category": "cultural",
+      "description": "Historic Jewish quarter with synagogues street art and trendy cafes in atmospheric courtyards.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.921Z",
+      "updated_at": "2026-05-03T19:02:06.921Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 23,
+    "fields": {
+      "city": 1,
+      "name": "La Boqueria Market",
+      "category": "food",
+      "description": "Vibrant food market on La Rambla offering fresh produce tapas and local specialties.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.527Z",
+      "updated_at": "2026-05-03T19:02:06.527Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 57,
+    "fields": {
+      "city": 12,
+      "name": "Livraria Lello",
+      "category": "cultural",
+      "description": "Stunning neo-Gothic bookshop with ornate wooden staircase said to inspire Harry Potter.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.556Z",
+      "updated_at": "2026-05-03T19:02:07.556Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 77,
+    "fields": {
+      "city": 19,
+      "name": "Mirabell Gardens",
+      "category": "cultural",
+      "description": "Baroque palace with ornate gardens featured in The Sound of Music.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:08.395Z",
+      "updated_at": "2026-05-03T19:02:08.395Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 32,
+    "fields": {
+      "city": 3,
+      "name": "Montmartre",
+      "category": "cultural",
+      "description": "Bohemian hilltop neighborhood with artists' square and white-domed basilica overlooking the city.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.830Z",
+      "updated_at": "2026-05-03T19:02:06.830Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 76,
+    "fields": {
+      "city": 19,
+      "name": "Mozart's Birthplace",
+      "category": "museum_history",
+      "description": "Yellow townhouse museum where Wolfgang Amadeus Mozart was born in 1756.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:08.271Z",
+      "updated_at": "2026-05-03T19:02:08.271Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 62,
+    "fields": {
+      "city": 14,
+      "name": "Old Town",
+      "category": "cultural",
+      "description": "UNESCO medieval city center with 1500 protected buildings and Roman history.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.665Z",
+      "updated_at": "2026-05-03T19:02:07.665Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 26,
+    "fields": {
+      "city": 2,
+      "name": "Old Town Square",
+      "category": "cultural",
+      "description": "Medieval square featuring the Astronomical Clock Týn Church and colorful baroque buildings.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.637Z",
+      "updated_at": "2026-05-03T19:02:06.638Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 22,
+    "fields": {
+      "city": 1,
+      "name": "Park Güell",
+      "category": "viewpoint",
+      "description": "Whimsical public park with mosaic art and panoramic city views designed by Antoni Gaudí.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.504Z",
+      "updated_at": "2026-05-03T19:02:06.504Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 86,
+    "fields": {
+      "city": 22,
+      "name": "Philosopher's Walk",
+      "category": "nature",
+      "description": "Scenic hillside path above the river with panoramic views popular with thinkers.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:09.442Z",
+      "updated_at": "2026-05-03T19:02:09.442Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 29,
+    "fields": {
+      "city": 9,
+      "name": "Ponte Vecchio",
+      "category": "cultural",
+      "description": "Medieval stone bridge lined with jewelry shops spanning the Arno River.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:06.728Z",
+      "updated_at": "2026-05-03T19:02:06.728Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 59,
+    "fields": {
+      "city": 12,
+      "name": "Port Wine Cellars",
+      "category": "food",
+      "description": "Historic cellars in Vila Nova de Gaia offering port wine tastings and tours.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.590Z",
+      "updated_at": "2026-05-03T19:02:07.590Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 65,
+    "fields": {
+      "city": 15,
+      "name": "Quadrilatero Market",
+      "category": "food",
+      "description": "Atmospheric medieval market district with food stalls trattorias and local specialties.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.739Z",
+      "updated_at": "2026-05-03T19:02:07.739Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 71,
+    "fields": {
+      "city": 17,
+      "name": "St. Bavo's Cathedral",
+      "category": "museum_art",
+      "description": "Gothic cathedral housing the famous Ghent Altarpiece by Van Eyck brothers.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.886Z",
+      "updated_at": "2026-05-03T19:02:07.886Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 52,
+    "fields": {
+      "city": 8,
+      "name": "Tivoli Gardens",
+      "category": "cultural",
+      "description": "Historic amusement park and gardens combining rides concerts and beautiful landscaping.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.372Z",
+      "updated_at": "2026-05-03T19:02:07.372Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 92,
+    "fields": {
+      "city": 24,
+      "name": "Torre del Mangia",
+      "category": "viewpoint",
+      "description": "Medieval bell tower offering 360-degree Tuscan countryside views after climbing 400 steps.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:09.958Z",
+      "updated_at": "2026-05-03T19:02:09.958Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 64,
+    "fields": {
+      "city": 15,
+      "name": "Two Towers",
+      "category": "viewpoint",
+      "description": "Leaning medieval towers offering city views and symbol of Bologna's skyline.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:07.704Z",
+      "updated_at": "2026-05-03T19:02:07.704Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 88,
+    "fields": {
+      "city": 23,
+      "name": "Unterlinden Museum",
+      "category": "museum_art",
+      "description": "Former convent housing the Isenheim Altarpiece and Alsatian art collection.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 4,
+      "created_at": "2026-05-03T19:02:09.628Z",
+      "updated_at": "2026-05-03T19:02:09.628Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 40,
+    "fields": {
+      "city": 7,
+      "name": "Anne Frank House",
+      "category": "museum_history",
+      "description": "Museum in the actual hiding place where Anne Frank wrote her famous diary during WWII.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.027Z",
+      "updated_at": "2026-05-03T19:02:07.027Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 42,
+    "fields": {
+      "city": 6,
+      "name": "Belém Tower",
+      "category": "architecture",
+      "description": "16th-century fortified tower representing Portugal's Age of Discovery with Manueline architecture.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.072Z",
+      "updated_at": "2026-05-03T19:02:07.072Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 45,
+    "fields": {
+      "city": 5,
+      "name": "Brandenburg Gate",
+      "category": "architecture",
+      "description": "Iconic 18th-century neoclassical monument symbolizing German reunification and European unity.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.174Z",
+      "updated_at": "2026-05-03T19:02:07.174Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 36,
+    "fields": {
+      "city": 4,
+      "name": "British Museum",
+      "category": "museum_history",
+      "description": "World-renowned museum with vast collection including Egyptian mummies and the Rosetta Stone.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.941Z",
+      "updated_at": "2026-05-03T19:02:06.941Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 25,
+    "fields": {
+      "city": 2,
+      "name": "Charles Bridge",
+      "category": "viewpoint",
+      "description": "Historic 14th-century stone bridge lined with baroque statues connecting Old Town and Lesser Town.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.597Z",
+      "updated_at": "2026-05-03T19:02:06.601Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 54,
+    "fields": {
+      "city": 11,
+      "name": "Edinburgh Castle",
+      "category": "museum_history",
+      "description": "Historic fortress on volcanic rock overlooking the city housing Scotland's crown jewels.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.437Z",
+      "updated_at": "2026-05-03T19:02:07.437Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 31,
+    "fields": {
+      "city": 3,
+      "name": "Eiffel Tower",
+      "category": "viewpoint",
+      "description": "Iconic 324-meter iron tower offering panoramic views of Paris from its observation decks.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.807Z",
+      "updated_at": "2026-05-03T19:02:06.807Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 28,
+    "fields": {
+      "city": 9,
+      "name": "Florence Cathedral",
+      "category": "architecture",
+      "description": "Iconic cathedral with Brunelleschi's dome and Giotto's bell tower dominating the skyline.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.695Z",
+      "updated_at": "2026-05-03T19:02:06.695Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 79,
+    "fields": {
+      "city": 20,
+      "name": "Golden Roof",
+      "category": "architecture",
+      "description": "Iconic landmark with 2657 gilded copper tiles marking the Old Town center.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:08.495Z",
+      "updated_at": "2026-05-03T19:02:08.495Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 70,
+    "fields": {
+      "city": 17,
+      "name": "Graslei",
+      "category": "viewpoint",
+      "description": "Picturesque medieval canal-side streets lined with guild houses perfect for photos.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.867Z",
+      "updated_at": "2026-05-03T19:02:07.867Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 69,
+    "fields": {
+      "city": 17,
+      "name": "Gravensteen Castle",
+      "category": "museum_history",
+      "description": "Imposing 12th-century medieval castle in city center with torture museum and rampart views.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.828Z",
+      "updated_at": "2026-05-03T19:02:07.828Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 84,
+    "fields": {
+      "city": 22,
+      "name": "Heidelberg Castle",
+      "category": "viewpoint",
+      "description": "Romantic red sandstone castle ruins overlooking the Neckar River and Old Town.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.193Z",
+      "updated_at": "2026-05-03T19:02:09.193Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 75,
+    "fields": {
+      "city": 19,
+      "name": "Hohensalzburg Fortress",
+      "category": "viewpoint",
+      "description": "Imposing hilltop fortress accessible by funicular with panoramic Alpine and city views.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:08.224Z",
+      "updated_at": "2026-05-03T19:02:08.224Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 66,
+    "fields": {
+      "city": 16,
+      "name": "La Concha Beach",
+      "category": "beach",
+      "description": "Stunning crescent-shaped bay with golden sand surrounded by elegant Belle Époque architecture.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.762Z",
+      "updated_at": "2026-05-03T19:02:07.762Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 87,
+    "fields": {
+      "city": 23,
+      "name": "Little Venice",
+      "category": "cultural",
+      "description": "Picturesque quarter with half-timbered houses lining canals perfect for boat rides.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.513Z",
+      "updated_at": "2026-05-03T19:02:09.513Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 81,
+    "fields": {
+      "city": 21,
+      "name": "Ljubljana Castle",
+      "category": "viewpoint",
+      "description": "Medieval fortress on hilltop offering panoramic city views accessible by funicular.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:08.826Z",
+      "updated_at": "2026-05-03T19:02:08.826Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 30,
+    "fields": {
+      "city": 3,
+      "name": "Louvre Museum",
+      "category": "museum_art",
+      "description": "World's largest art museum home to the Mona Lisa and 38000 artworks spanning centuries.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.773Z",
+      "updated_at": "2026-05-03T19:02:06.773Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 34,
+    "fields": {
+      "city": 13,
+      "name": "Main Market Square",
+      "category": "cultural",
+      "description": "Europe's largest medieval square surrounded by cafes and the Gothic St. Mary's Basilica.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.890Z",
+      "updated_at": "2026-05-03T19:02:06.890Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 72,
+    "fields": {
+      "city": 18,
+      "name": "Markt Square",
+      "category": "cultural",
+      "description": "Central medieval square with belfry tower colorful facades and horse-drawn carriages.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.909Z",
+      "updated_at": "2026-05-03T19:02:07.909Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 46,
+    "fields": {
+      "city": 5,
+      "name": "Museum Island",
+      "category": "museum_art",
+      "description": "UNESCO site with five world-class museums including Pergamon and Neues Museum.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.206Z",
+      "updated_at": "2026-05-03T19:02:07.206Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 78,
+    "fields": {
+      "city": 20,
+      "name": "Nordkette Cable Car",
+      "category": "nature",
+      "description": "Modern cable car ascending from city center to 2256m offering dramatic Alpine panoramas.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:08.427Z",
+      "updated_at": "2026-05-03T19:02:08.427Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 51,
+    "fields": {
+      "city": 8,
+      "name": "Nyhavn",
+      "category": "cultural",
+      "description": "Colorful 17th-century waterfront with traditional houses cafes and historic wooden ships.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.327Z",
+      "updated_at": "2026-05-03T19:02:07.338Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 85,
+    "fields": {
+      "city": 22,
+      "name": "Old Bridge",
+      "category": "viewpoint",
+      "description": "Baroque stone bridge with monkey statue offering classic castle and Old Town views.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.289Z",
+      "updated_at": "2026-05-03T19:02:09.289Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 67,
+    "fields": {
+      "city": 16,
+      "name": "Old Town",
+      "category": "food",
+      "description": "Compact historic quarter packed with pintxos bars and Basque gastronomic culture.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.788Z",
+      "updated_at": "2026-05-03T19:02:07.788Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 89,
+    "fields": {
+      "city": 23,
+      "name": "Old Town",
+      "category": "cultural",
+      "description": "Fairy-tale historic center with colorful half-timbered houses cobblestone streets and flower boxes.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.723Z",
+      "updated_at": "2026-05-03T19:02:09.723Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 63,
+    "fields": {
+      "city": 15,
+      "name": "Piazza Maggiore",
+      "category": "cultural",
+      "description": "Grand medieval square surrounded by historic buildings and the Basilica of San Petronio.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.679Z",
+      "updated_at": "2026-05-03T19:02:07.679Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 90,
+    "fields": {
+      "city": 24,
+      "name": "Piazza del Campo",
+      "category": "cultural",
+      "description": "Shell-shaped medieval square where the famous Palio horse race takes place twice yearly.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.772Z",
+      "updated_at": "2026-05-03T19:02:09.772Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 24,
+    "fields": {
+      "city": 2,
+      "name": "Prague Castle",
+      "category": "architecture",
+      "description": "Largest ancient castle complex in the world with Gothic cathedral and stunning city views.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.560Z",
+      "updated_at": "2026-05-03T19:02:06.560Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 60,
+    "fields": {
+      "city": 14,
+      "name": "Regensburg Cathedral",
+      "category": "architecture",
+      "description": "Gothic cathedral with twin spires and impressive stained glass dominating the medieval Old Town.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.611Z",
+      "updated_at": "2026-05-03T19:02:07.611Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 58,
+    "fields": {
+      "city": 12,
+      "name": "Ribeira District",
+      "category": "cultural",
+      "description": "UNESCO riverside quarter with colorful houses wine cellars and traditional rabelo boats.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.575Z",
+      "updated_at": "2026-05-03T19:02:07.575Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 39,
+    "fields": {
+      "city": 7,
+      "name": "Rijksmuseum",
+      "category": "museum_art",
+      "description": "National museum showcasing Dutch Golden Age masterpieces including Rembrandt's Night Watch.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.006Z",
+      "updated_at": "2026-05-03T19:02:07.006Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 55,
+    "fields": {
+      "city": 11,
+      "name": "Royal Mile",
+      "category": "cultural",
+      "description": "Historic street connecting castle to palace lined with medieval buildings shops and whisky bars.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.479Z",
+      "updated_at": "2026-05-03T19:02:07.479Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 21,
+    "fields": {
+      "city": 1,
+      "name": "Sagrada Familia",
+      "category": "architecture",
+      "description": "Gaudí's unfinished masterpiece basilica with stunning modernist architecture and colorful stained glass.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.483Z",
+      "updated_at": "2026-05-03T19:02:06.483Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 48,
+    "fields": {
+      "city": 10,
+      "name": "Schönbrunn Palace",
+      "category": "architecture",
+      "description": "Imperial summer palace with opulent baroque rooms and stunning formal gardens.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.258Z",
+      "updated_at": "2026-05-03T19:02:07.258Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 91,
+    "fields": {
+      "city": 24,
+      "name": "Siena Cathedral",
+      "category": "architecture",
+      "description": "Stunning Gothic-Romanesque cathedral with striped marble facade and Piccolomini Library frescoes.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:09.868Z",
+      "updated_at": "2026-05-03T19:02:09.868Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 49,
+    "fields": {
+      "city": 10,
+      "name": "St. Stephen's Cathedral",
+      "category": "architecture",
+      "description": "Gothic masterpiece with distinctive tiled roof dominating Vienna's historic center.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.284Z",
+      "updated_at": "2026-05-03T19:02:07.284Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 61,
+    "fields": {
+      "city": 14,
+      "name": "Stone Bridge",
+      "category": "viewpoint",
+      "description": "12th-century medieval bridge over the Danube offering classic Old Town views.",
+      "is_free": true,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:07.640Z",
+      "updated_at": "2026-05-03T19:02:07.640Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 37,
+    "fields": {
+      "city": 4,
+      "name": "Tower of London",
+      "category": "museum_history",
+      "description": "Historic fortress and former royal palace housing the Crown Jewels and dramatic history.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.961Z",
+      "updated_at": "2026-05-03T19:02:06.961Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 27,
+    "fields": {
+      "city": 9,
+      "name": "Uffizi Gallery",
+      "category": "museum_art",
+      "description": "World-class Renaissance art museum housing works by Botticelli Michelangelo and Leonardo da Vinci.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.664Z",
+      "updated_at": "2026-05-03T19:02:06.664Z"
+    }
+  },
+  {
+    "model": "destinations.attraction",
+    "pk": 33,
+    "fields": {
+      "city": 13,
+      "name": "Wawel Castle",
+      "category": "museum_history",
+      "description": "Royal castle and cathedral complex on a hill showcasing Polish Renaissance architecture and crown jewels.",
+      "is_free": false,
+      "entry_fee": null,
+      "importance": 5,
+      "created_at": "2026-05-03T19:02:06.871Z",
+      "updated_at": "2026-05-03T19:02:06.871Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 18,
+    "fields": {
+      "city": 14,
+      "name": "Bayerische Jazzwoche",
+      "event_type": "concert",
+      "description": "Bavarian Jazz Week featuring international jazz artists in intimate venues across the Old Town. From traditional to contemporary jazz styles.",
+      "season": "autumn",
+      "specific_months": "June",
+      "is_free": false,
+      "typical_cost": "€15-40",
+      "created_at": "2026-01-11T11:02:13.906Z",
+      "updated_at": "2026-01-11T11:02:13.906Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 7,
+    "fields": {
+      "city": 9,
+      "name": "Florence Wine Festival",
+      "event_type": "food",
+      "description": "Annual celebration of Tuscan wines with tastings from regional vineyards and food pairings. Masterclasses with sommeliers and winemakers.",
+      "season": "autumn",
+      "specific_months": "September-October",
+      "is_free": false,
+      "typical_cost": "€30-60",
+      "created_at": "2026-01-11T11:02:13.663Z",
+      "updated_at": "2026-01-11T11:02:13.663Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 1,
+    "fields": {
+      "city": 1,
+      "name": "La Merce Festival",
+      "event_type": "festival",
+      "description": "Barcelona's biggest annual festival honouring patron saint. Free citywide celebration with concerts, human towers (castellers), fire runs (correfocs), giant parades, and fireworks. Authentic local experience.",
+      "season": "autumn",
+      "specific_months": "September",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2025-12-31T12:14:20.981Z",
+      "updated_at": "2025-12-31T12:14:20.981Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 12,
+    "fields": {
+      "city": 2,
+      "name": "Signal Festival",
+      "event_type": "cultural",
+      "description": "Spectacular light art festival transforming Prague's historic buildings and public spaces with interactive installations and projections.",
+      "season": "autumn",
+      "specific_months": "October",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2026-01-11T11:02:13.772Z",
+      "updated_at": "2026-01-11T11:02:13.772Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 13,
+    "fields": {
+      "city": 13,
+      "name": "Krakow Film Festival",
+      "event_type": "cultural",
+      "description": "One of Europe's oldest documentary and short film festivals. International screenings discussions and competitions in historic cinemas.",
+      "season": "spring",
+      "specific_months": "May-June",
+      "is_free": false,
+      "typical_cost": "€20-50",
+      "created_at": "2026-01-11T11:02:13.789Z",
+      "updated_at": "2026-01-11T11:02:13.789Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 8,
+    "fields": {
+      "city": 9,
+      "name": "Maggio Musicale Fiorentino",
+      "event_type": "cultural",
+      "description": "Italy's oldest and most prestigious music festival featuring world-class opera ballet and symphonic concerts in historic Florentine venues.",
+      "season": "spring",
+      "specific_months": "April-June",
+      "is_free": false,
+      "typical_cost": "€40-150",
+      "created_at": "2026-01-11T11:02:13.678Z",
+      "updated_at": "2026-01-11T11:02:13.678Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 10,
+    "fields": {
+      "city": 2,
+      "name": "Prague Spring International Music Festival",
+      "event_type": "concert",
+      "description": "Prestigious classical music festival featuring renowned orchestras and soloists from around the world. Opens with performance of Smetana's Ma Vlast.",
+      "season": "spring",
+      "specific_months": "May-June",
+      "is_free": false,
+      "typical_cost": "€25-100",
+      "created_at": "2026-01-11T11:02:13.728Z",
+      "updated_at": "2026-01-11T11:02:13.728Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 2,
+    "fields": {
+      "city": 1,
+      "name": "Primavera Sound Music Festival",
+      "event_type": "concert",
+      "description": "Major international music festival featuring indie, rock, electronic, and alternative artists. Week-long event attracting music lovers from across Europe to beachfront venue.",
+      "season": "spring",
+      "specific_months": "Late May/early June",
+      "is_free": false,
+      "typical_cost": "200-300",
+      "created_at": "2025-12-31T12:15:14.209Z",
+      "updated_at": "2025-12-31T12:15:14.209Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 17,
+    "fields": {
+      "city": 14,
+      "name": "Regensburg Dult",
+      "event_type": "festival",
+      "description": "Traditional Bavarian folk festival with beer tents amusement rides local food and live music. Authentic regional celebration twice yearly.",
+      "season": "spring",
+      "specific_months": "May",
+      "is_free": false,
+      "typical_cost": "€10-30",
+      "created_at": "2026-01-11T11:02:13.886Z",
+      "updated_at": "2026-01-11T11:02:13.886Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 4,
+    "fields": {
+      "city": 1,
+      "name": "Sant Jordi Day (St. George's Day)",
+      "event_type": "cultural",
+      "description": "Catalan equivalent of Valentine's Day. Traditional exchange of roses and books. La Rambla filled with book and flower stalls. UNESCO World Book Day celebration unique to Catalonia.",
+      "season": "spring",
+      "specific_months": "April 23",
+      "is_free": false,
+      "typical_cost": "",
+      "created_at": "2025-12-31T12:16:56.434Z",
+      "updated_at": "2025-12-31T12:16:56.434Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 3,
+    "fields": {
+      "city": 1,
+      "name": "Festa Major de Gràcia",
+      "event_type": "festival",
+      "description": "Neighborhood festival where streets compete for best decorations. Local residents transform entire streets with elaborate themed displays. Concerts, food stalls, and authentic Barcelona atmosphere.",
+      "season": "summer",
+      "specific_months": "August (mid-month)",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2025-12-31T12:16:04.813Z",
+      "updated_at": "2025-12-31T12:16:04.813Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 9,
+    "fields": {
+      "city": 9,
+      "name": "Gelato Festival",
+      "event_type": "food",
+      "description": "International gelato competition and tasting event celebrating artisanal Italian ice cream. Multiple flavors from master gelato makers across Italy.",
+      "season": "summer",
+      "specific_months": "April-May",
+      "is_free": false,
+      "typical_cost": "€15-25",
+      "created_at": "2026-01-11T11:02:13.712Z",
+      "updated_at": "2026-01-11T11:02:13.712Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 14,
+    "fields": {
+      "city": 13,
+      "name": "Jewish Culture Festival",
+      "event_type": "festival",
+      "description": "Week-long celebration of Jewish heritage with klezmer concerts workshops exhibitions and traditional food in historic Kazimierz district.",
+      "season": "summer",
+      "specific_months": "June-July",
+      "is_free": false,
+      "typical_cost": "€10-30",
+      "created_at": "2026-01-11T11:02:13.805Z",
+      "updated_at": "2026-01-11T11:02:13.805Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 6,
+    "fields": {
+      "city": 1,
+      "name": "Sónar - International Festival of Advanced Music",
+      "event_type": "concert",
+      "description": "Cutting-edge electronic music and multimedia arts festival. Day and night programs featuring experimental music, DJ sets, and audiovisual performances. Major event for electronic music fans.",
+      "season": "summer",
+      "specific_months": "June",
+      "is_free": false,
+      "typical_cost": "180-200",
+      "created_at": "2025-12-31T12:18:51.493Z",
+      "updated_at": "2025-12-31T12:18:51.493Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 5,
+    "fields": {
+      "city": 1,
+      "name": "Barcelona Wine Week",
+      "event_type": "food",
+      "description": "Professional wine fair showcasing Spanish and Catalan wines. Tastings, masterclasses, and producer meetings. Perfect for wine enthusiasts wanting authentic regional experience.",
+      "season": "winter",
+      "specific_months": "February",
+      "is_free": false,
+      "typical_cost": "30-80",
+      "created_at": "2025-12-31T12:18:14.734Z",
+      "updated_at": "2025-12-31T12:18:14.734Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 15,
+    "fields": {
+      "city": 13,
+      "name": "Christmas Market",
+      "event_type": "market",
+      "description": "Atmospheric Christmas market in Main Market Square. Traditional Polish crafts ornaments mulled wine and regional specialties beneath the Cloth Hall.",
+      "season": "winter",
+      "specific_months": "November-December",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2026-01-11T11:02:13.838Z",
+      "updated_at": "2026-01-11T11:02:13.838Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 11,
+    "fields": {
+      "city": 2,
+      "name": "Christmas Markets",
+      "event_type": "market",
+      "description": "Traditional Christmas markets across Old Town Square and Wenceslas Square. Mulled wine trdelník pastries handcrafted gifts and festive atmosphere.",
+      "season": "winter",
+      "specific_months": "November-December",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2026-01-11T11:02:13.745Z",
+      "updated_at": "2026-01-11T11:02:13.745Z"
+    }
+  },
+  {
+    "model": "destinations.event",
+    "pk": 16,
+    "fields": {
+      "city": 14,
+      "name": "Regensburg Christmas Market",
+      "event_type": "market",
+      "description": "Traditional Bavarian Christmas market at Neupfarrplatz. Handcrafted ornaments mulled wine bratwurst and festive atmosphere in medieval setting.",
+      "season": "winter",
+      "specific_months": "November-December",
+      "is_free": true,
+      "typical_cost": "",
+      "created_at": "2026-01-11T11:02:13.863Z",
+      "updated_at": "2026-01-11T11:02:13.863Z"
+    }
+  }
+]

@@ -1,0 +1,73 @@
+city_name,name,category,description,is_free,entry_fee,importance
+Barcelona,Sagrada Familia,architecture,Gaudí's unfinished masterpiece basilica with stunning modernist architecture and colorful stained glass.,false,26 EUR,5
+Barcelona,Park Güell,viewpoint,Whimsical public park with mosaic art and panoramic city views designed by Antoni Gaudí.,false,10 EUR,4
+Barcelona,La Boqueria Market,food,Vibrant food market on La Rambla offering fresh produce tapas and local specialties.,true,,4
+Prague,Prague Castle,architecture,Largest ancient castle complex in the world with Gothic cathedral and stunning city views.,false,10 EUR,5
+Prague,Charles Bridge,viewpoint,Historic 14th-century stone bridge lined with baroque statues connecting Old Town and Lesser Town.,true,,5
+Prague,Old Town Square,cultural,Medieval square featuring the Astronomical Clock Týn Church and colorful baroque buildings.,true,,4
+Florence,Uffizi Gallery,museum_art,World-class Renaissance art museum housing works by Botticelli Michelangelo and Leonardo da Vinci.,false,20 EUR,5
+Florence,Florence Cathedral,architecture,Iconic cathedral with Brunelleschi's dome and Giotto's bell tower dominating the skyline.,false,18 EUR,5
+Florence,Ponte Vecchio,cultural,Medieval stone bridge lined with jewelry shops spanning the Arno River.,true,,4
+Paris,Louvre Museum,museum_art,World's largest art museum home to the Mona Lisa and 38000 artworks spanning centuries.,false,17 EUR,5
+Paris,Eiffel Tower,viewpoint,Iconic 324-meter iron tower offering panoramic views of Paris from its observation decks.,false,28 EUR,5
+Paris,Montmartre,cultural,Bohemian hilltop neighborhood with artists' square and white-domed basilica overlooking the city.,true,,4
+Krakow,Wawel Castle,museum_history,Royal castle and cathedral complex on a hill showcasing Polish Renaissance architecture and crown jewels.,false,7 EUR,5
+Krakow,Main Market Square,cultural,Europe's largest medieval square surrounded by cafes and the Gothic St. Mary's Basilica.,true,,5
+Krakow,Kazimierz District,cultural,Historic Jewish quarter with synagogues street art and trendy cafes in atmospheric courtyards.,true,,4
+London,British Museum,museum_history,World-renowned museum with vast collection including Egyptian mummies and the Rosetta Stone.,true,,5
+London,Tower of London,museum_history,Historic fortress and former royal palace housing the Crown Jewels and dramatic history.,false,33 GBP,5
+London,Borough Market,food,Historic food market offering international street food artisan products and gourmet delights.,true,,4
+Amsterdam,Rijksmuseum,museum_art,National museum showcasing Dutch Golden Age masterpieces including Rembrandt's Night Watch.,false,22 EUR,5
+Amsterdam,Anne Frank House,museum_history,Museum in the actual hiding place where Anne Frank wrote her famous diary during WWII.,false,16 EUR,5
+Amsterdam,Canal Ring,viewpoint,UNESCO heritage 17th-century canal network perfect for boat tours and waterside strolls.,false,18 EUR,4
+Lisbon,Belém Tower,architecture,16th-century fortified tower representing Portugal's Age of Discovery with Manueline architecture.,false,6 EUR,5
+Lisbon,Alfama District,cultural,Lisbon's oldest neighborhood with narrow streets colorful tiles fado music and castle views.,true,,4
+Lisbon,Time Out Market,food,Gourmet food hall featuring top Lisbon chefs and restaurants under one roof.,true,,3
+Berlin,Brandenburg Gate,architecture,Iconic 18th-century neoclassical monument symbolizing German reunification and European unity.,true,,5
+Berlin,Museum Island,museum_art,UNESCO site with five world-class museums including Pergamon and Neues Museum.,false,12 EUR,5
+Berlin,East Side Gallery,cultural,Longest remaining section of Berlin Wall transformed into open-air gallery with political murals.,true,,4
+Vienna,Schönbrunn Palace,architecture,Imperial summer palace with opulent baroque rooms and stunning formal gardens.,false,20 EUR,5
+Vienna,St. Stephen's Cathedral,architecture,Gothic masterpiece with distinctive tiled roof dominating Vienna's historic center.,false,6 EUR,5
+Vienna,Belvedere Palace,museum_art,Baroque palace complex housing Austrian art including Klimt's famous Kiss painting.,false,17 EUR,4
+Copenhagen,Nyhavn,cultural,Colorful 17th-century waterfront with traditional houses cafes and historic wooden ships.,true,,5
+Copenhagen,Tivoli Gardens,cultural,Historic amusement park and gardens combining rides concerts and beautiful landscaping.,false,25 EUR,4
+Copenhagen,The Little Mermaid,viewpoint,Iconic bronze statue inspired by Hans Christian Andersen's fairy tale on harbor waterfront.,true,,3
+Edinburgh,Edinburgh Castle,museum_history,Historic fortress on volcanic rock overlooking the city housing Scotland's crown jewels.,false,19 GBP,5
+Edinburgh,Royal Mile,cultural,Historic street connecting castle to palace lined with medieval buildings shops and whisky bars.,true,,5
+Edinburgh,Arthur's Seat,nature,Extinct volcano offering panoramic city views after a scenic hike in Holyrood Park.,true,,4
+Porto,Livraria Lello,cultural,Stunning neo-Gothic bookshop with ornate wooden staircase said to inspire Harry Potter.,false,5 EUR,4
+Porto,Ribeira District,cultural,UNESCO riverside quarter with colorful houses wine cellars and traditional rabelo boats.,true,,5
+Porto,Port Wine Cellars,food,Historic cellars in Vila Nova de Gaia offering port wine tastings and tours.,false,12 EUR,4
+Regensburg,Regensburg Cathedral,architecture,Gothic cathedral with twin spires and impressive stained glass dominating the medieval Old Town.,true,,5
+Regensburg,Stone Bridge,viewpoint,12th-century medieval bridge over the Danube offering classic Old Town views.,true,,5
+Regensburg,Old Town,cultural,UNESCO medieval city center with 1500 protected buildings and Roman history.,true,,4
+Bologna,Piazza Maggiore,cultural,Grand medieval square surrounded by historic buildings and the Basilica of San Petronio.,true,,5
+Bologna,Two Towers,viewpoint,Leaning medieval towers offering city views and symbol of Bologna's skyline.,false,5 EUR,4
+Bologna,Quadrilatero Market,food,Atmospheric medieval market district with food stalls trattorias and local specialties.,true,,4
+San Sebastián,La Concha Beach,beach,Stunning crescent-shaped bay with golden sand surrounded by elegant Belle Époque architecture.,true,,5
+San Sebastián,Old Town,food,Compact historic quarter packed with pintxos bars and Basque gastronomic culture.,true,,5
+San Sebastián,Monte Igueldo,viewpoint,Mountain viewpoint accessible by funicular offering panoramic bay and coastline views.,false,4 EUR,3
+Ghent,Gravensteen Castle,museum_history,Imposing 12th-century medieval castle in city center with torture museum and rampart views.,false,12 EUR,5
+Ghent,Graslei,viewpoint,Picturesque medieval canal-side streets lined with guild houses perfect for photos.,true,,5
+Ghent,St. Bavo's Cathedral,museum_art,Gothic cathedral housing the famous Ghent Altarpiece by Van Eyck brothers.,false,4 EUR,4
+Bruges,Markt Square,cultural,Central medieval square with belfry tower colorful facades and horse-drawn carriages.,true,,5
+Bruges,Canal Boat Tour,viewpoint,Scenic cruise through medieval canals offering unique perspective of historic buildings.,false,12 EUR,4
+Bruges,Church of Our Lady,museum_art,Gothic church housing Michelangelo's Madonna and Child sculpture.,false,6 EUR,4
+Salzburg,Hohensalzburg Fortress,viewpoint,Imposing hilltop fortress accessible by funicular with panoramic Alpine and city views.,false,13 EUR,5
+Salzburg,Mozart's Birthplace,museum_history,Yellow townhouse museum where Wolfgang Amadeus Mozart was born in 1756.,false,12 EUR,4
+Salzburg,Mirabell Gardens,cultural,Baroque palace with ornate gardens featured in The Sound of Music.,false,4 EUR,4
+Innsbruck,Nordkette Cable Car,nature,Modern cable car ascending from city center to 2256m offering dramatic Alpine panoramas.,false,38 EUR,5
+Innsbruck,Golden Roof,architecture,Iconic landmark with 2657 gilded copper tiles marking the Old Town center.,true,,5
+Innsbruck,Bergisel Ski Jump,viewpoint,Olympic ski jump with viewing platform designed by Zaha Hadid offering mountain views.,false,10 EUR,3
+Ljubljana,Ljubljana Castle,viewpoint,Medieval fortress on hilltop offering panoramic city views accessible by funicular.,false,10 EUR,5
+Ljubljana,Dragon Bridge,architecture,Art Nouveau bridge with distinctive dragon statues symbolizing the city.,true,,4
+Ljubljana,Central Market,food,Vibrant riverside market designed by Plečnik with fresh produce local foods and atmosphere.,true,,4
+Heidelberg,Heidelberg Castle,viewpoint,Romantic red sandstone castle ruins overlooking the Neckar River and Old Town.,false,9 EUR,5
+Heidelberg,Old Bridge,viewpoint,Baroque stone bridge with monkey statue offering classic castle and Old Town views.,true,,5
+Heidelberg,Philosopher's Walk,nature,Scenic hillside path above the river with panoramic views popular with thinkers.,true,,4
+Colmar,Little Venice,cultural,Picturesque quarter with half-timbered houses lining canals perfect for boat rides.,false,7 EUR,5
+Colmar,Unterlinden Museum,museum_art,Former convent housing the Isenheim Altarpiece and Alsatian art collection.,false,13 EUR,4
+Colmar,Old Town,cultural,Fairy-tale historic center with colorful half-timbered houses cobblestone streets and flower boxes.,true,,5
+Siena,Piazza del Campo,cultural,Shell-shaped medieval square where the famous Palio horse race takes place twice yearly.,true,,5
+Siena,Siena Cathedral,architecture,Stunning Gothic-Romanesque cathedral with striped marble facade and Piccolomini Library frescoes.,false,6 EUR,5
+Siena,Torre del Mangia,viewpoint,Medieval bell tower offering 360-degree Tuscan countryside views after climbing 400 steps.,false,10 EUR,4

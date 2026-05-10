@@ -1,0 +1,13 @@
+city_name,event_name,event_type,description,season,specific_months,is_free,typical_cost
+Florence,Florence Wine Festival,food,Annual celebration of Tuscan wines with tastings from regional vineyards and food pairings. Masterclasses with sommeliers and winemakers.,autumn,September-October,False,€30-60
+Florence,Maggio Musicale Fiorentino,cultural,Italy's oldest and most prestigious music festival featuring world-class opera ballet and symphonic concerts in historic Florentine venues.,spring,April-June,False,€40-150
+Florence,Gelato Festival,food,International gelato competition and tasting event celebrating artisanal Italian ice cream. Multiple flavors from master gelato makers across Italy.,summer,April-May,False,€15-25
+Prague,Prague Spring International Music Festival,concert,Prestigious classical music festival featuring renowned orchestras and soloists from around the world. Opens with performance of Smetana's Ma Vlast.,spring,May-June,False,€25-100
+Prague,Christmas Markets,market,Traditional Christmas markets across Old Town Square and Wenceslas Square. Mulled wine trdelník pastries handcrafted gifts and festive atmosphere.,winter,November-December,True,
+Prague,Signal Festival,cultural,Spectacular light art festival transforming Prague's historic buildings and public spaces with interactive installations and projections.,autumn,October,True,
+Krakow,Krakow Film Festival,cultural,One of Europe's oldest documentary and short film festivals. International screenings discussions and competitions in historic cinemas.,spring,May-June,False,€20-50
+Krakow,Jewish Culture Festival,festival,Week-long celebration of Jewish heritage with klezmer concerts workshops exhibitions and traditional food in historic Kazimierz district.,summer,June-July,False,€10-30
+Krakow,Christmas Market,market,Atmospheric Christmas market in Main Market Square. Traditional Polish crafts ornaments mulled wine and regional specialties beneath the Cloth Hall.,winter,November-December,True,
+Regensburg,Regensburg Christmas Market,market,Traditional Bavarian Christmas market at Neupfarrplatz. Handcrafted ornaments mulled wine bratwurst and festive atmosphere in medieval setting.,winter,November-December,True,
+Regensburg,Regensburg Dult,festival,Traditional Bavarian folk festival with beer tents amusement rides local food and live music. Authentic regional celebration twice yearly.,spring,May,False,€10-30
+Regensburg,Bayerische Jazzwoche,concert,Bavarian Jazz Week featuring international jazz artists in intimate venues across the Old Town. From traditional to contemporary jazz styles.,autumn,June,False,€15-40

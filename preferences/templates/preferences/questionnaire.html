@@ -1,0 +1,537 @@
+{% extends 'base.html' %}
+
+{% block title %}Plan Your Trip - Preferences{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #fafafa;
+    }
+
+    .questionnaire-container {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .questionnaire-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .questionnaire-header h1 {
+        font-size: 1.9em;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .questionnaire-header p {
+        font-size: 1em;
+        color: #666;
+    }
+
+    .required-note {
+        text-align: center;
+        color: #888;
+        font-size: 0.85em;
+        margin-bottom: 20px;
+    }
+
+    .required-note span {
+        background: #fef3c7;
+        color: #92400e;
+        padding: 2px 8px;
+        border-radius: 99px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .progress-bar-container {
+        background: #e0e0e0;
+        border-radius: 99px;
+        height: 5px;
+        margin-bottom: 25px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: #4F46E5;
+        border-radius: 99px;
+        transition: width 0.4s ease;
+        width: 0%;
+    }
+
+    .progress-label {
+        text-align: center;
+        font-size: 0.82em;
+        color: #888;
+        margin-bottom: 8px;
+    }
+
+    .form-section {
+        background: white;
+        padding: 20px 24px;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        margin-bottom: 14px;
+        border: 2px solid #f0f0f0;
+        transition: border-color 0.3s;
+    }
+
+    .form-section.answered {
+        border-color: #c7d7fe;
+    }
+
+    .form-section.error {
+        border-color: #fca5a5;
+    }
+
+    .form-section h2 {
+        color: #1a1a1a;
+        font-size: 1em;
+        margin-bottom: 4px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .section-status {
+        margin-left: auto;
+        font-size: 0.85em;
+    }
+
+    .required-badge {
+        font-size: 0.7em;
+        background: #fef3c7;
+        color: #92400e;
+        padding: 1px 7px;
+        border-radius: 99px;
+        font-weight: 500;
+    }
+
+    .optional-badge {
+        font-size: 0.7em;
+        background: #f1f5f9;
+        color: #64748b;
+        padding: 1px 7px;
+        border-radius: 99px;
+        font-weight: 500;
+    }
+
+    .form-section .help-text {
+        color: #999;
+        font-size: 0.82em;
+        margin-bottom: 12px;
+    }
+
+    .form-field {
+        margin-bottom: 0;
+    }
+
+    .form-field label {
+        display: block;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    .form-field input[type="text"] {
+        width: 100%;
+        padding: 9px 13px;
+        border: 2px solid #e0e0e0;
+        border-radius: 7px;
+        font-size: 0.9em;
+        transition: border-color 0.2s;
+        box-sizing: border-box;
+    }
+
+    .form-field input[type="text"]:focus {
+        outline: none;
+        border-color: #4F46E5;
+    }
+
+    .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 7px;
+    }
+
+    .radio-option, .checkbox-option {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-size: 0.9em;
+    }
+
+    .radio-option:hover, .checkbox-option:hover {
+        border-color: #4F46E5;
+        background: #f8f8ff;
+    }
+
+    .radio-option.selected, .checkbox-option.selected {
+        border-color: #4F46E5;
+        background: #eef2ff;
+    }
+
+    .radio-option input, .checkbox-option input {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        accent-color: #4F46E5;
+        flex-shrink: 0;
+    }
+
+    .error-message {
+        color: #dc2626;
+        font-size: 0.82em;
+        margin-top: 6px;
+        display: none;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .error-message.visible {
+        display: flex;
+    }
+
+    .submit-button {
+        background: #4F46E5;
+        color: white;
+        padding: 14px 48px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        transition: all 0.2s;
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+        margin-top: 8px;
+    }
+
+    .submit-button:hover {
+        background: #4338CA;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(79, 70, 229, 0.3);
+    }
+
+    .helptext {
+        display: block;
+        color: #999;
+        font-size: 0.8em;
+        margin-top: 4px;
+    }
+
+    .validation-summary {
+        background: #fef2f2;
+        border: 2px solid #fca5a5;
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        display: none;
+    }
+
+    .validation-summary.visible {
+        display: block;
+    }
+
+    .validation-summary h3 {
+        color: #dc2626;
+        margin: 0 0 6px 0;
+        font-size: 0.95em;
+    }
+
+    .validation-summary ul {
+        margin: 0;
+        padding-left: 18px;
+        color: #dc2626;
+        font-size: 0.88em;
+    }
+</style>
+
+<div class="questionnaire-container">
+    <div class="questionnaire-header">
+        <h1>Tell Us About Your Dream Trip</h1>
+        <p>Answer a few questions to get personalized city recommendations</p>
+    </div>
+
+    <p class="required-note">Questions marked <span>Required</span> help us find your best matches</p>
+
+    <p class="progress-label"><span id="progress-text">0 of 5 required questions answered</span></p>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div class="validation-summary" id="validation-summary">
+        <h3>⚠️ Please answer the required questions before continuing:</h3>
+        <ul id="validation-list"></ul>
+    </div>
+
+    <form method="post" id="questionnaire-form" novalidate>
+        {% csrf_token %}
+
+        <!-- Budget -->
+        <div class="form-section" id="section-budget" data-required="true" data-label="Budget">
+            <h2>💰 Budget <span class="required-badge">Required</span> <span class="section-status" id="status-budget"></span></h2>
+            <p class="help-text">Your daily budget for accommodation and meals</p>
+            <div class="form-field">
+                <div class="radio-group" id="group-budget">
+                    {% for radio in form.budget %}
+                        <label class="radio-option">{{ radio.tag }}{{ radio.choice_label }}</label>
+                    {% endfor %}
+                </div>
+                <div class="error-message" id="error-budget">⚠️ Please select a budget.</div>
+            </div>
+        </div>
+
+        <!-- Season -->
+        <div class="form-section" id="section-preferred_season" data-required="true" data-label="Travel Season">
+            <h2>🌍 Travel Season <span class="required-badge">Required</span> <span class="section-status" id="status-preferred_season"></span></h2>
+            <p class="help-text">When are you planning to travel?</p>
+            <div class="form-field">
+                <div class="radio-group" id="group-preferred_season">
+                    {% for radio in form.preferred_season %}
+                        <label class="radio-option">{{ radio.tag }}{{ radio.choice_label }}</label>
+                    {% endfor %}
+                </div>
+                <div class="error-message" id="error-preferred_season">⚠️ Please select a travel season.</div>
+            </div>
+        </div>
+
+        <!-- Departure -->
+        <div class="form-section" id="section-departure" data-required="true" data-label="Departure City">
+            <h2>✈️ Departure City <span class="required-badge">Required</span> <span class="section-status" id="status-departure"></span></h2>
+            <p class="help-text">Where are you travelling from? Enter your nearest major city for the best transport recommendations — for example "London" rather than a specific town or suburb.</p>
+            <div class="form-field">
+                {{ form.departure_city.label_tag }}
+                {{ form.departure_city }}
+            </div>
+            <div class="error-message" id="error-departure">⚠️ Please enter your departure city.</div>
+        </div>
+
+        <!-- Transport -->
+        <div class="form-section" id="section-transport_preference" data-required="true" data-label="Transport Preference">
+            <h2>🚆 Transport <span class="required-badge">Required</span> <span class="section-status" id="status-transport_preference"></span></h2>
+            <p class="help-text">How do you prefer to travel?</p>
+            <div class="form-field">
+                <div class="radio-group" id="group-transport_preference">
+                    {% for radio in form.transport_preference %}
+                        <label class="radio-option">{{ radio.tag }}{{ radio.choice_label }}</label>
+                    {% endfor %}
+                </div>
+                <div class="error-message" id="error-transport_preference">⚠️ Please select a transport preference.</div>
+            </div>
+        </div>
+
+        <!-- Trip Length (optional) -->
+        <div class="form-section" id="section-trip_length" data-required="false" data-label="Trip Length">
+            <h2>📅 Trip Length <span class="optional-badge">Optional</span></h2>
+            <p class="help-text">How many days do you plan to spend?</p>
+            <div class="form-field">
+                <div class="radio-group" id="group-trip_length">
+                    {% for radio in form.trip_length %}
+                        <label class="radio-option">{{ radio.tag }}{{ radio.choice_label }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages (optional) -->
+        <div class="form-section" id="section-languages" data-required="false" data-label="Languages">
+            <h2>🗣️ Languages <span class="optional-badge">Optional</span></h2>
+            <p class="help-text">Languages you speak — helps find cities where you'll feel at home.</p>
+            <div class="form-field">
+                {{ form.languages }}
+                {% if form.languages.help_text %}
+                    <span class="helptext">{{ form.languages.help_text }}</span>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="form-section" id="section-interests" data-required="true" data-label="Interests">
+            <h2>❤️ Your Interests <span class="required-badge">Required</span> <span class="section-status" id="status-interests"></span></h2>
+            <p class="help-text">What excites you most? Select all that apply.</p>
+            <div class="form-field">
+                <div class="checkbox-group" id="group-interests">
+                    {% for checkbox in form.interests %}
+                        <label class="checkbox-option">{{ checkbox.tag }}{{ checkbox.choice_label }}</label>
+                    {% endfor %}
+                </div>
+                <div class="error-message" id="error-interests">⚠️ Please select at least one interest.</div>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-button">
+            Get My Personalized Recommendations →
+        </button>
+    </form>
+</div>
+
+<div id="loading-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.95); z-index:9999; flex-direction:column; align-items:center; justify-content:center;">
+    <div style="text-align:center;">
+        <div style="width:60px; height:60px; border:5px solid #e0e0e0; border-top-color:#4F46E5; border-radius:50%; animation:spin 0.9s linear infinite; margin:0 auto 30px;"></div>
+        <h2 style="color:#1a1a1a; font-size:1.8em; font-weight:700; margin-bottom:12px;">Finding Your Perfect Cities...</h2>
+        <p style="color:#666; font-size:1.1em;" id="loading-message">Analysing your preferences</p>
+    </div>
+</div>
+
+<style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+
+<script>
+    const requiredFields = ['budget', 'preferred_season', 'departure', 'transport_preference', 'interests'];
+    const totalRequired = requiredFields.length;
+
+    function isFieldAnswered(field) {
+        if (field === 'departure') {
+            const city = document.querySelector('[name="departure_city"]');
+            return city && city.value.trim() !== '';
+        }
+        const group = document.getElementById(`group-${field}`);
+        if (!group) return false;
+        return Array.from(group.querySelectorAll('input')).some(i => i.checked);
+    }
+
+    function getAnsweredCount() {
+        return requiredFields.filter(f => isFieldAnswered(f)).length;
+    }
+
+    function updateProgress() {
+        const answered = getAnsweredCount();
+        document.getElementById('progress-bar').style.width = (answered / totalRequired * 100) + '%';
+        document.getElementById('progress-text').textContent = `${answered} of ${totalRequired} required questions answered`;
+    }
+
+    function markAnswered(field) {
+        const section = document.getElementById(`section-${field}`);
+        const status = document.getElementById(`status-${field}`);
+        const error = document.getElementById(`error-${field}`);
+        if (section) section.classList.add('answered');
+        if (status) status.innerHTML = '✅';
+        if (error) error.classList.remove('visible');
+        updateProgress();
+    }
+
+    function markUnanswered(field) {
+        const section = document.getElementById(`section-${field}`);
+        const status = document.getElementById(`status-${field}`);
+        if (section) section.classList.remove('answered');
+        if (status) status.innerHTML = '';
+        updateProgress();
+    }
+
+    // Radio fields
+    ['budget', 'preferred_season', 'transport_preference'].forEach(field => {
+        const group = document.getElementById(`group-${field}`);
+        if (!group) return;
+        group.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.addEventListener('change', () => {
+                group.querySelectorAll('.radio-option').forEach(opt => opt.classList.remove('selected'));
+                input.closest('.radio-option').classList.add('selected');
+                markAnswered(field);
+            });
+        });
+    });
+
+    // Trip length — optional, just style
+    const tripGroup = document.getElementById('group-trip_length');
+    if (tripGroup) {
+        tripGroup.querySelectorAll('input[type="radio"]').forEach(input => {
+            input.addEventListener('change', () => {
+                tripGroup.querySelectorAll('.radio-option').forEach(opt => opt.classList.remove('selected'));
+                input.closest('.radio-option').classList.add('selected');
+            });
+        });
+    }
+
+    // Departure city
+    const departureCityInput = document.querySelector('[name="departure_city"]');
+    if (departureCityInput) {
+        departureCityInput.addEventListener('input', () => {
+            if (isFieldAnswered('departure')) {
+                markAnswered('departure');
+            } else {
+                markUnanswered('departure');
+            }
+        });
+    }
+
+    // Interests
+    const interestsGroup = document.getElementById('group-interests');
+    if (interestsGroup) {
+        interestsGroup.querySelectorAll('input[type="checkbox"]').forEach(input => {
+            input.addEventListener('change', () => {
+                input.closest('.checkbox-option').classList.toggle('selected', input.checked);
+                if (isFieldAnswered('interests')) {
+                    markAnswered('interests');
+                } else {
+                    markUnanswered('interests');
+                }
+            });
+        });
+    }
+
+    // Submit validation
+    document.getElementById('questionnaire-form').addEventListener('submit', function(e) {
+        const unanswered = requiredFields.filter(f => !isFieldAnswered(f));
+
+        if (unanswered.length > 0) {
+            e.preventDefault();
+
+            const summary = document.getElementById('validation-summary');
+            const list = document.getElementById('validation-list');
+            list.innerHTML = unanswered.map(f => {
+                const section = document.getElementById(`section-${f}`);
+                return `<li>${section ? section.dataset.label : f}</li>`;
+            }).join('');
+            summary.classList.add('visible');
+
+            unanswered.forEach(f => {
+                const section = document.getElementById(`section-${f}`);
+                const error = document.getElementById(`error-${f}`);
+                if (section) section.classList.add('error');
+                if (error) error.classList.add('visible');
+            });
+
+            document.getElementById(`section-${unanswered[0]}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            // Show loading spinner
+            const overlay = document.getElementById('loading-overlay');
+            overlay.style.display = 'flex';
+            const messages = [
+                'Analysing your preferences...',
+                'Scoring cities across Europe...',
+                'Generating personalised explanations...',
+                'Almost there...',
+            ];
+            let msgIndex = 0;
+            const msgEl = document.getElementById('loading-message');
+            setInterval(() => {
+                msgIndex = (msgIndex + 1) % messages.length;
+                msgEl.textContent = messages[msgIndex];
+            }, 3000);
+        }
+    });
+
+    updateProgress();
+</script>
+
+{% endblock %}

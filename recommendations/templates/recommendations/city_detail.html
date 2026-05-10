@@ -1,0 +1,449 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ city.name }}, {{ city.country }} - Details{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #fafafa;
+    }
+    
+    .detail-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .back-nav {
+        margin-bottom: 30px;
+    }
+    
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: white;
+        color: #4F46E5;
+        padding: 10px 20px;
+        border: 2px solid #4F46E5;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    
+    .back-button:hover {
+        background: #4F46E5;
+        color: white;
+    }
+    
+    .city-hero {
+    color: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.3);
+}
+    
+    .city-hero h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    
+    .city-hero .country {
+        font-size: 1.3em;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+    
+    .match-score {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    
+    .section-card {
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border: 1px solid #f0f0f0;
+    }
+    
+    .section-card h2 {
+        color: #1a1a1a;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    
+    .section-subtitle {
+        color: #666;
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+    
+    .ai-explanation {
+        background: #f8f9ff;
+        border-left: 4px solid #4F46E5;
+        padding: 25px;
+        border-radius: 8px;
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: #1a1a1a;
+    }
+    
+    .score-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        margin-top: 25px;
+    }
+    
+    .score-box {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .score-label {
+        color: #666;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+    
+    .score-value {
+        color: #4F46E5;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    
+    .items-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .item-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #4F46E5;
+    max-height: 200px;
+    overflow-y: auto;
+}
+    
+    .item-card h4 {
+        color: #1a1a1a;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    
+    .item-card .meta {
+        color: #666;
+        font-size: 0.9em;
+        margin-bottom: 12px;
+    }
+    
+    .item-card p {
+        color: #444;
+        line-height: 1.6;
+        font-size: 0.95em;
+    }
+    
+    .placeholder-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e8eaf6 100%);
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        border: 2px dashed #4F46E5;
+    }
+    
+    .placeholder-section h3 {
+        color: #4F46E5;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    .placeholder-section p {
+        color: #666;
+        font-size: 1.05em;
+    }
+    
+    .nav-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    .nav-btn {
+        flex: 1;
+        padding: 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    
+    .nav-btn-primary {
+        background: #4F46E5;
+        color: white;
+    }
+    
+    .nav-btn-primary:hover {
+        background: #4338CA;
+        transform: translateY(-2px);
+    }
+    
+    .nav-btn-secondary {
+        background: white;
+        color: #4F46E5;
+        border: 2px solid #4F46E5;
+    }
+    
+    .nav-btn-secondary:hover {
+        background: #f8f9ff;
+    }
+</style>
+
+<div class="detail-container">
+    <!-- Back Navigation -->
+    <div class="back-nav">
+        <a href="{% url 'recommendations:results' %}" class="back-button">
+            ← Back to All Recommendations
+        </a>
+    </div>
+    
+    
+    <!-- City Hero -->
+<div class="city-hero" style="{% if city.hero_image_url %}background: linear-gradient(rgba(79, 70, 229, 0.75), rgba(124, 58, 237, 0.75)), url('{{ city.hero_image_url }}'); background-size: cover; background-position: center;{% else %}background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);{% endif %}">
+    <h1>{{ city.name }}</h1>
+    <div class="country">{{ city.country }}</div>
+    <div class="match-score">{{ city_rec.total_score|floatformat:0 }}% Match for You</div>
+</div>
+    
+    <!-- AI Explanation -->
+    <div class="section-card">
+        <h2>✨ Why {{ city.name }} is Perfect for You</h2>
+        <p class="section-subtitle">Based on your unique preferences and travel style</p>
+        
+        {% if city_rec.ai_explanation %}
+        <div class="ai-explanation">
+            {{ city_rec.ai_explanation }}
+        </div>
+        {% endif %}
+        
+        <div class="score-grid">
+            {% for key, value in city_rec.breakdown.items %}
+            <div class="score-box">
+                <div class="score-label">{{ key }}</div>
+                <div class="score-value">{{ value }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Matching Attractions -->
+{% if matching_attractions %}
+<div class="section-card">
+    <h2>🎨 Top Attractions Matching Your Interests</h2>
+    <p class="section-subtitle">Places we think you'll love based on what you told us</p>
+    
+    <div class="items-grid">
+        {% for attraction in matching_attractions %}
+        <div class="item-card">
+            <h4>{{ attraction.name }}</h4>
+            <div class="meta">
+                {{ attraction.get_category_display }}
+                {% if attraction.is_free %}
+                    • Free
+                {% elif attraction.entry_fee %}
+                    • {% if attraction.city.country == "United Kingdom" %}£{% else %}€{% endif %}{{ attraction.entry_fee }}
+                {% endif %}
+            </div>
+            <p>{{ attraction.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+    
+    <!-- Matching Events -->
+    {% if matching_events %}
+    <div class="section-card">
+        <h2>🎉 Events During Your Travel Season</h2>
+        <p class="section-subtitle">Happening in {{ preferences.season|title }}</p>
+        
+        <div class="items-grid">
+            {% for event in matching_events %}
+            <div class="item-card">
+                <h4>{{ event.name }}</h4>
+                <div class="meta">
+                    {{ event.get_event_type_display }} • {{ event.specific_months }}
+                    {% if not event.is_free %} • {{ event.typical_cost }}{% else %} • Free{% endif %}
+                </div>
+                <p>{{ event.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    
+    <!-- Getting There -->
+<div class="section-card">
+    <h2>✈️ Getting There</h2>
+    <p class="section-subtitle">Travel options from {{ preferences.departure_city }}</p>
+    
+    <div style="background: #f8f9ff; padding: 25px; border-radius: 12px; border-left: 4px solid #4F46E5;">
+        <h3 style="color: #1a1a1a; margin-bottom: 15px; font-size: 1.3em;">Transport Options</h3>
+        
+        <div style="display: grid; gap: 20px;">
+            <div>
+                <strong style="color: #4F46E5;">✈️ By Air</strong>
+                <p style="color: #444; margin-top: 8px; line-height: 1.6;">
+                    Most major European cities connect to {{ city.name }} via budget airlines (Ryanair, EasyJet) and national carriers. 
+                    Flight time from {{ preferences.departure_city }} is typically 1-3 hours depending on connections.
+                </p>
+            </div>
+            
+            {% if preferences.transport != 'prefer_flight' %}
+            <div>
+                <strong style="color: #4F46E5;">🚆 By Train</strong>
+                <p style="color: #444; margin-top: 8px; line-height: 1.6;">
+                    {% if city.name in 'Paris,Amsterdam,Berlin,Brussels,Vienna,Prague,Barcelona' %}
+                    {{ city.name }} is a major European rail hub with excellent international connections. 
+                    Consider scenic routes through the Alps or direct high-speed services.
+                    {% else %}
+                    Regional train connections available. Check rail passes for budget-friendly travel across Europe.
+                    {% endif %}
+                </p>
+            </div>
+            {% endif %}
+            
+            <div>
+                <strong style="color: #4F46E5;">💡 Travel Tips</strong>
+                <p style="color: #444; margin-top: 8px; line-height: 1.6;">
+                    Book 2-3 months in advance for best prices. Consider arriving mid-week for lower fares. 
+                    {% if city.country != preferences.departure_country %}
+                    Remember to check visa requirements and bring valid ID/passport for international travel.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Where to Stay -->
+<div class="section-card">
+    <h2>🏨 Where to Stay</h2>
+    <p class="section-subtitle">Accommodation in {{ city.name }}</p>
+    
+    <div style="background: #f8f9ff; padding: 25px; border-radius: 12px; border-left: 4px solid #4F46E5;">
+        <div style="display: grid; gap: 20px;">
+            <div>
+                <strong style="color: #4F46E5; font-size: 1.2em;">Average Cost: €{{ city.avg_hotel_cost_per_night }}/night</strong>
+                <p style="color: #666; margin-top: 5px;">Based on mid-range hotels in central locations</p>
+            </div>
+            
+            <div>
+                <h4 style="color: #1a1a1a; margin-bottom: 10px;">💰 Budget Range</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 10px;">
+                    <div style="background: white; padding: 15px; border-radius: 8px;">
+                        <strong style="color: #666;">Budget</strong>
+                        <p style="color: #1a1a1a; font-size: 1.2em; margin-top: 5px;">€{{ city.avg_hotel_cost_per_night|add:"-30" }}-{{ city.avg_hotel_cost_per_night|add:"-10" }}</p>
+                        <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Hostels, budget hotels</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px; border: 2px solid #4F46E5;">
+                        <strong style="color: #4F46E5;">Mid-Range</strong>
+                        <p style="color: #1a1a1a; font-size: 1.2em; margin-top: 5px;">€{{ city.avg_hotel_cost_per_night }}</p>
+                        <p style="color: #666; font-size: 0.9em; margin-top: 5px;">3-star hotels, boutique</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 15px; border-radius: 8px;">
+                        <strong style="color: #666;">Luxury</strong>
+                        <p style="color: #1a1a1a; font-size: 1.2em; margin-top: 5px;">€{{ city.avg_hotel_cost_per_night|add:"50" }}+</p>
+                        <p style="color: #666; font-size: 0.9em; margin-top: 5px;">4-5 star hotels</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 style="color: #1a1a1a; margin-bottom: 10px;">📍 Where to Stay</h4>
+                <p style="color: #444; line-height: 1.6;">
+                    {% if city.name == "Barcelona" %}
+                    Gothic Quarter for historic charm, Eixample for modernist architecture, Barceloneta for beach access.
+                    {% elif city.name == "Prague" %}
+                    Old Town (Staré Město) for proximity to attractions, Lesser Town (Malá Strana) for quieter atmosphere.
+                    {% elif city.name == "Florence" %}
+                    Historic center (Centro Storico) for walkable access to museums, Oltrarno for local atmosphere.
+                    {% elif city.name == "Paris" %}
+                    Le Marais for trendy boutiques, Latin Quarter for student vibe, Saint-Germain for classic Parisian elegance.
+                    {% else %}
+                    Stay in the historic city center for easy walking access to major attractions, or slightly outside for better value.
+                    {% endif %}
+                </p>
+            </div>
+            
+            <div>
+                <strong style="color: #4F46E5;">💡 Booking Tips</strong>
+                <p style="color: #444; margin-top: 8px; line-height: 1.6;">
+                    Book 1-2 months ahead for best selection. Consider apartments for longer stays. 
+                    Check locations near public transport for easy access to attractions.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About City -->
+    <div class="section-card">
+        <h2>📍 About {{ city.name }}</h2>
+        <div style="color: #444; line-height: 1.8; font-size: 1.05em;">
+            <p><strong>Region:</strong> {{ city.region }}</p>
+            <p><strong>Language:</strong> {{ city.primary_language }}{% if city.other_languages %}, {{ city.other_languages }}{% endif %}</p>
+            <p><strong>Best Time to Visit:</strong> {{ city.best_seasons }}</p>
+            <p><strong>Budget Level:</strong> {{ city.get_cost_level_display }}</p>
+            <p style="margin-top: 20px;">{{ city.description }}</p>
+            
+            {% if city.is_unesco_heritage %}
+            <div style="margin-top: 20px; padding: 15px; background: #fff8e1; border-left: 4px solid #FFC107; border-radius: 6px;">
+                <strong>🏛️ UNESCO World Heritage Site:</strong> {{ city.unesco_sites }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+<div class="nav-buttons">
+        {% if has_previous %}
+        <a href="{% url 'preferences:city_detail' previous_city_id %}" class="nav-btn nav-btn-secondary">
+            ← Previous Recommendation
+        </a>
+        {% else %}
+        <div></div>
+        {% endif %}
+        
+        {% if has_next %}
+        <a href="{% url 'preferences:city_detail' next_city_id %}" class="nav-btn nav-btn-primary">
+            Next Recommendation →
+        </a>
+        {% else %}
+        <div></div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

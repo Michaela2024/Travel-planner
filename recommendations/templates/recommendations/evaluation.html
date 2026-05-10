@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+
+{% block title %}Algorithm Evaluation Dashboard{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #fafafa;
+    }
+    
+    .eval-container {
+        max-width: 1400px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .eval-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 40px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    
+    .eval-header h1 {
+        font-size: 2.5em;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .eval-header p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    
+    .persona-section {
+        background: white;
+        border-radius: 16px;
+        padding: 40px;
+        margin-bottom: 40px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border: 1px solid #f0f0f0;
+    }
+    
+    .persona-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .persona-name {
+        font-size: 1.8em;
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+    
+    .persona-badge {
+        background: #4F46E5;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    
+    .persona-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 12px;
+    }
+    
+    .detail-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .detail-label {
+        font-size: 0.85em;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
+    
+    .detail-value {
+        font-size: 1em;
+        color: #1a1a1a;
+        font-weight: 600;
+    }
+    
+    .recommendations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .rec-card {
+        background: white;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 25px;
+        transition: all 0.2s;
+    }
+    
+    .rec-card:hover {
+        border-color: #4F46E5;
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+    }
+    
+    .rec-rank {
+        display: inline-block;
+        background: linear-gradient(135deg, #4F46E5, #7C3AED);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 0.85em;
+        margin-bottom: 12px;
+    }
+    
+    .rec-city-name {
+        font-size: 1.4em;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    
+    .rec-score {
+        font-size: 1.8em;
+        color: #4F46E5;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .score-breakdown {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #f0f0f0;
+    }
+    
+    .breakdown-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .breakdown-label {
+        color: #666;
+        font-size: 0.9em;
+        text-transform: capitalize;
+    }
+    
+    .breakdown-value {
+        color: #1a1a1a;
+        font-weight: 700;
+        font-size: 0.95em;
+    }
+    
+    .breakdown-bar {
+        flex-grow: 1;
+        height: 6px;
+        background: #e0e0e0;
+        border-radius: 3px;
+        margin: 0 12px;
+        overflow: hidden;
+    }
+    
+    .breakdown-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #4F46E5, #7C3AED);
+        border-radius: 3px;
+    }
+    
+    .stats-summary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 12px;
+    }
+    
+    .stat-box {
+        text-align: center;
+    }
+    
+    .stat-value {
+        font-size: 2em;
+        color: #4F46E5;
+        font-weight: 700;
+    }
+    
+    .stat-label {
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+</style>
+
+<div class="eval-container">
+    <div class="eval-header">
+        <h1>🧪 Algorithm Evaluation Dashboard</h1>
+        <p>Testing personalization across {{ results|length }} diverse user personas</p>
+        
+        <div class="stats-summary">
+            <div class="stat-box">
+                <div class="stat-value">{{ results|length }}</div>
+                <div class="stat-label">Test Personas</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">6</div>
+                <div class="stat-label">Scoring Criteria</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">14</div>
+                <div class="stat-label">European Cities</div>
+            </div>
+        </div>
+    </div>
+    
+    {% for result in results %}
+    <div class="persona-section">
+        <div class="persona-header">
+            <h2 class="persona-name">{{ result.persona.name }}</h2>
+            <span class="persona-badge">Simulated Persona</span>
+        </div>
+        
+        <div class="persona-details">
+            <div class="detail-item">
+                <span class="detail-label">Budget</span>
+                <span class="detail-value">{{ result.persona.get_budget_preference_display }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Trip Length</span>
+                <span class="detail-value">{{ result.persona.preferred_trip_length }} days</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Season</span>
+                <span class="detail-value">{{ result.persona.get_preferred_season_display }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Languages</span>
+                <span class="detail-value">{{ result.persona.languages }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Departure</span>
+                <span class="detail-value">{{ result.persona.departure_city }}, {{ result.persona.departure_country }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Transport</span>
+                <span class="detail-value">{{ result.persona.get_transport_preference_display }}</span>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px; padding: 20px; background: #fff8e1; border-left: 4px solid #FFC107; border-radius: 8px;">
+            <strong style="color: #1a1a1a;">Interests:</strong>
+            <span style="color: #666;">{{ result.persona.interests }}</span>
+        </div>
+        
+        <h3 style="color: #1a1a1a; margin-bottom: 20px; font-size: 1.3em;">Top 3 Recommendations:</h3>
+        
+        <div class="recommendations-grid">
+            {% for rec in result.recommendations %}
+            <div class="rec-card">
+                <div class="rec-rank">Rank #{{ forloop.counter }}</div>
+                <div class="rec-city-name">{{ rec.city.name }}</div>
+                <div style="color: #666; font-size: 0.9em; margin-bottom: 10px;">{{ rec.city.country }}</div>
+                <div class="rec-score">{{ rec.total_score|floatformat:0 }} pts</div>
+                
+                <!-- AI-Generated Explanation -->
+                {% if rec.ai_explanation %}
+                <div style="margin: 20px 0; padding: 15px; background: #f8f9ff; border-left: 3px solid #4F46E5; border-radius: 6px;">
+                    <div style="color: #666; font-size: 0.85em; font-weight: 600; text-transform: uppercase; margin-bottom: 8px;">
+                        ✨ Why This Matches
+                    </div>
+                    <div style="color: #1a1a1a; line-height: 1.6; font-size: 0.95em;">
+                        {{ rec.ai_explanation }}
+                    </div>
+                </div>
+                {% endif %}
+                
+                <div class="score-breakdown">
+                    {% for key, value in rec.breakdown.items %}
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">{{ key }}</span>
+                        <div class="breakdown-bar">
+                            <div class="breakdown-fill" style="width: {% widthratio value 35 100 %}%;"></div>
+                        </div>
+                        <span class="breakdown-value">{{ value }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% empty %}
+            <div style="padding: 40px; text-align: center; color: #999;">
+                No recommendations generated
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% empty %}
+    <div style="text-align: center; padding: 60px;">
+        <h2 style="color: #666;">No personas found</h2>
+        <p style="color: #999;">Please create simulated personas in the admin panel.</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

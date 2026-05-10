@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Personalized Recommendations{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #fafafa;
+    }
+    
+    .results-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .results-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .results-header h1 {
+        font-size: 2.5em;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .results-header p {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    .city-card {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+        border: 1px solid #f0f0f0;
+        transition: all 0.3s;
+    }
+    
+    .city-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    
+    .city-header {
+        padding: 30px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .city-rank {
+        display: inline-block;
+        background: #4F46E5;
+        color: white;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+    
+    .city-name {
+        font-size: 2em;
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .city-score {
+        font-size: 1.3em;
+        color: #4F46E5;
+        font-weight: 600;
+    }
+    
+    .progress-bar {
+        width: 100%;
+        height: 8px;
+        background: #e0e0e0;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 8px;
+    }
+    
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #4F46E5, #7C3AED);
+        border-radius: 4px;
+    }
+    
+    .city-body {
+        padding: 30px;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .priority-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    }
+</style>
+
+<div class="results-container">
+    <div class="results-header">
+        <h1>Your Personalized Recommendations</h1>
+        <p>Based on your travel preferences</p>
+    </div>
+</div>
+
+<!-- How We Match You -->
+<div style="max-width: 900px; margin: 0 auto 40px; background: white; padding: 30px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    <h3 style="color: #4F46E5; margin-bottom: 15px; font-size: 1.3em;">🎯 How We Match You</h3>
+    <p style="color: #444; line-height: 1.7; margin-bottom: 20px;">
+        We score each city on 6 key factors based on your questionnaire answers, with a maximum of 100 points:
+    </p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">Budget Match (30 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">How well the city's cost level matches your budget preference</p>
+        </div>
+        
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">Interest Match (35 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Whether the city excels in your selected interests (art, food, nature, etc.)</p>
+        </div>
+        
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">Language (10 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Languages you speak that are spoken locally (English is widely understood across Europe)</p>
+        </div>
+        
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">Season Match (10 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Whether your preferred travel season is ideal for visiting</p>
+        </div>
+        
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">Transport (10 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Accessibility from your departure city via your preferred transport</p>
+        </div>
+        
+        <div style="padding: 15px; background: #f8f9ff; border-radius: 8px; border-left: 3px solid #4F46E5;">
+            <strong style="color: #4F46E5;">UNESCO Bonus (5 pts)</strong>
+            <p style="color: #666; font-size: 0.9em; margin-top: 5px;">Extra points for World Heritage sites if you value history/culture</p>
+        </div>
+    </div>
+    
+    <p style="color: #666; margin-top: 20px; font-size: 0.95em; text-align: center;">
+        Cities are ranked by total score. Higher scores mean better matches for your unique preferences!
+    </p>
+</div>
+
+<!-- Priority Selector -->
+<div style="max-width: 900px; margin: 0 auto 30px; background: white; padding: 25px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    <h3 style="color: #1a1a1a; margin-bottom: 10px; font-size: 1.2em;">🎯 What Matters Most to You?</h3>
+    <p style="color: #666; margin-bottom: 20px; font-size: 0.95em;">Click to re-sort your recommendations:</p>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+        <button class="priority-btn active" data-priority="overall" style="flex: 1; min-width: 150px; padding: 12px 20px; background: #4F46E5; color: white; border: 2px solid #4F46E5; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            🎯 Best Overall Match
+        </button>
+        <button class="priority-btn" data-priority="budget" style="flex: 1; min-width: 150px; padding: 12px 20px; background: white; color: #4F46E5; border: 2px solid #4F46E5; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            💰 Best Value
+        </button>
+        <button class="priority-btn" data-priority="transport" style="flex: 1; min-width: 150px; padding: 12px 20px; background: white; color: #4F46E5; border: 2px solid #4F46E5; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            🚂 Easiest to Reach
+        </button>
+        <button class="priority-btn" data-priority="interests" style="flex: 1; min-width: 150px; padding: 12px 20px; background: white; color: #4F46E5; border: 2px solid #4F46E5; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            🎨 Best for Interests
+        </button>
+        <button class="priority-btn" data-priority="season" style="flex: 1; min-width: 150px; padding: 12px 20px; background: white; color: #4F46E5; border: 2px solid #4F46E5; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s;">
+            🌤️ Perfect Season
+        </button>
+    </div>
+    
+    <div id="priority-message" style="margin-top: 15px; padding: 12px; background: #f8f9ff; border-radius: 6px; color: #4F46E5; font-size: 0.9em; text-align: center;">
+        Showing cities by overall match score
+    </div>
+</div>
+
+<!-- City Cards -->
+<div class="results-container">
+    {% for rec in recommendations %}
+    <div class="city-card" 
+         data-overall="{{ rec.total_score }}"
+         data-budget="{{ rec.breakdown.budget }}"
+         data-interests="{{ rec.breakdown.interests }}"
+         data-transport="{{ rec.breakdown.transport }}"
+         data-season="{{ rec.breakdown.season }}"
+         data-language="{{ rec.breakdown.language }}"
+         data-unesco="{{ rec.breakdown.unesco }}">
+        
+        <div class="city-header">
+            <div class="city-rank">#{{ forloop.counter }} Match</div>
+            <h2 class="city-name">{{ rec.city.name }}, {{ rec.city.country }}</h2>
+            <div class="city-score">{{ rec.total_score }}% Match</div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: {{ rec.total_score }}%;"></div>
+            </div>
+        </div>
+        
+        <div class="city-body">
+            <h3 style="color: #1a1a1a; margin-bottom: 15px; font-size: 1.2em;">Why This City Matches You</h3>
+            
+            {% if rec.ai_explanation %}
+            <div style="margin: 0 0 25px 0; padding: 20px; background: #f8f9ff; border-left: 4px solid #4F46E5; border-radius: 8px;">
+                <div style="color: #1a1a1a; line-height: 1.7; font-size: 1.05em;">
+                    {{ rec.ai_explanation }}
+                </div>
+            </div>
+            {% endif %}
+            
+            <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px; max-height: 200px; overflow-y: auto;">
+                <p style="color: #666; line-height: 1.7; margin: 0;">
+                    <strong style="color: #1a1a1a;">About {{ rec.city.name }}:</strong> 
+                    {{ rec.city.description }}
+                </p>
+            </div>
+        </div>
+        
+        <div style="padding: 0 30px 30px;">
+            <a href="{% url 'preferences:city_detail' rec.city.id %}" 
+               style="display: block; text-align: center; background: #4F46E5; color: white; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s;">
+                View Full Details & Travel Options →
+            </a>
+        </div>
+    </div>
+    {% empty %}
+    <div style="text-align: center; padding: 60px 20px;">
+        <h2 style="color: #666;">No recommendations found</h2>
+        <p style="color: #888; margin-top: 15px;">Please try adjusting your preferences.</p>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const priorityButtons = document.querySelectorAll('.priority-btn');
+    const priorityMessage = document.getElementById('priority-message');
+    const resultsContainer = document.querySelectorAll('.results-container')[1]; // Second one with cards
+    
+    const messages = {
+        overall: 'Showing cities by overall match score',
+        budget: 'Showing cities with best budget matches first',
+        transport: 'Showing easiest cities to reach first',
+        interests: 'Showing cities that best match your interests first',
+        season: 'Showing cities perfect for your travel season first'
+    };
+    
+    priorityButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const priority = this.dataset.priority;
+            
+            // Update button styles
+            priorityButtons.forEach(btn => {
+                btn.style.background = 'white';
+                btn.style.color = '#4F46E5';
+                btn.classList.remove('active');
+            });
+            this.style.background = '#4F46E5';
+            this.style.color = 'white';
+            this.classList.add('active');
+            
+            // Update message
+            priorityMessage.textContent = messages[priority];
+            
+            // Get all city cards
+            const cityCards = Array.from(document.querySelectorAll('.city-card'));
+            
+            // Sort by selected priority
+            cityCards.sort((a, b) => {
+                const scoreA = parseFloat(a.dataset[priority]);
+                const scoreB = parseFloat(b.dataset[priority]);
+                return scoreB - scoreA;
+            });
+            
+            // Re-append in new order
+            resultsContainer.innerHTML = '';
+            cityCards.forEach((card, index) => {
+                const rankDiv = card.querySelector('.city-rank');
+                if (rankDiv) {
+                    rankDiv.textContent = `#${index + 1} Match`;
+                }
+                
+                setTimeout(() => {
+                    resultsContainer.appendChild(card);
+                    card.style.animation = 'fadeIn 0.3s ease-in';
+                }, index * 50);
+            });
+        });
+    });
+});
+</script>
+
+{% endblock %}
