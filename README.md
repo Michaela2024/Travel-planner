@@ -119,5 +119,32 @@ pip install -r requirements.txt
 ```
 
 ### Environment variables
-
+ 
 Create a `.env` file in the project root:
+ 
+```
+GEMINI_API_KEY=your-gemini-api-key-here
+DJANGO_SECRET_KEY=your-django-secret-key-here
+DEBUG=True
+```
+ 
+### Database setup
+ 
+```bash
+python manage.py migrate
+```
+ 
+### Run the development server
+ 
+```bash
+python manage.py runserver
+```
+ 
+The application will be available at `http://127.0.0.1:8000/`.
+ 
+### Run the evaluation suite
+ 
+```bash
+python eval_recommendations.py
+```
+ 
